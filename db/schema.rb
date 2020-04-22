@@ -10,17 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2020_04_19_222248) do
-=======
 ActiveRecord::Schema.define(version: 2020_04_20_223828) do
->>>>>>> master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
-=======
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -47,7 +41,6 @@ ActiveRecord::Schema.define(version: 2020_04_20_223828) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
->>>>>>> master
   create_table "aws_texts", force: :cascade do |t|
     t.string "title"
     t.text "content"
