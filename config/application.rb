@@ -34,5 +34,6 @@ module GyakutenCloneGroup
 
     config.autoload_paths << Rails.root.join("lib")
 
+    config.i18n.default_locale = :ja
   end
 end
