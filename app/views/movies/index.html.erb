@@ -1,9 +1,1 @@
 <h1>Movie一覧</h1>
-<% if user_signed_in? %>
-  <% @movies.each do |movie| %>
-    <p><%= movie.title %></p>
-    <p><%= movie.url %></p>
-  <% end %>
-<% else %>
-  <p>ログインして下さい</p>
-<% end %>
