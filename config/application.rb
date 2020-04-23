@@ -32,7 +32,6 @@ module GyakutenCloneGroup
     # Don't generate system test files.
     config.generators.system_tests = nil
 
-    # libディレクトリを読み込ませる設定
     config.autoload_paths << Rails.root.join("lib")
 
     config.i18n.default_locale = :ja
