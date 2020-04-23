@@ -18,6 +18,7 @@ namespace :import_csv do
     end
   end
 
+
   desc "movie_data.csvをmovieにインポートするタスク"
 
  #rake import_csv:movies
