@@ -7,11 +7,7 @@ namespace :import_csv do
   #rake import_csv:aws_texts
   task aws_texts: :environment do
 
-    class Import
-      def self.csv_data(path:)
-        list = import.csv_data(path: 'db/csv_data/aws_text_data.csv')
-      end
-    end
+    list = Import.csv_data(path: 'db/csv_data/aws_text_data.csv')
 
     puts "インポート処理を開始"
     begin
