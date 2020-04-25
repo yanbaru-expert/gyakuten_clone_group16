@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/movies">Navbar</a>
+  <a class="navbar-brand" href="/movies">GyakutenCloneGroup16</a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
   　<span class="navbar-toggler-icon"></span>
@@ -23,19 +23,21 @@
           　<a class="nav-item nav-link active" href="#">質問集</a>
           </li>
 
+          <div class="collapse navbar-collapse" id="navbarNav">
           <% if user_signed_in? %>
           </li>
-          <li class="nav-item active">
-            <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'nav-link active' %>
+          <li class="nav-item nav-link active">
+            <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'nav-link' %>
           </li>
           <% else %>
-          <li class="nav-item active">
-            <%= link_to "新規登録", new_user_registration_path, class: 'nav-link activek' %>
+          <li class="nav-item nav-link active">
+            <%= link_to "新規登録", new_user_registration_path, class: 'nav-link' %>
           </li>
-          <li class="nav-item active">
-            <%= link_to "ログイン", new_user_session_path, class: 'nav-link active' %>
+          <li class="nav-item nav-link active">
+            <%= link_to "ログイン", new_user_session_path, class: 'nav-link' %>
           </li>
           <% end %>
+          </div>
           
       </ul>
   </div>
