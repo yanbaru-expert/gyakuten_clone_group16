@@ -1,0 +1,4 @@
+  <% flash.each do |key, value| %>
+  <% alert_type = key.sub(/notice/, 'info').sub(/alert/, 'danger') %>
+  <%= content_tag :div, value, class: "alert alert-#{alert_type}" %>
+  <% end %>
