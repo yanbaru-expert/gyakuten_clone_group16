@@ -1,4 +1,14 @@
-<% @questions.each do |question| %>
-    <p><%= question.title %></p>
-    <p>質問日　<%= question.created_at.to_s(:datetime_jp) %></p>
-<% end %>
+<div class="container">
+    
+        <% @questions.each do |question| %>
+        <button type="button" class="btn btn-outline-secondary">
+            <div class="row">
+                <div class="col-md-8"><%= question.title %></div>   
+                <div class="col-md-4">質問日　<%= question.created_at.to_s(:datetime_jp) %></div>
+            </div>
+        </button>
+        <% end %>
+   
+</div>
+
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
