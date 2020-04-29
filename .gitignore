@@ -12,6 +12,7 @@ rerun.txt
 pickle-email-*.html
 .DS_Store
 /.idea
+.vscode
 
 # Ignore all logfiles and tempfiles.
 /log/*
