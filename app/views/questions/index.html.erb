@@ -1,0 +1,4 @@
+<% @questions.each do |question| %>
+    <p><%= question.title %></p>
+    <p>質問日　<%= question.created_at.to_s(:datetime_jp) %></p>
+<% end %>
