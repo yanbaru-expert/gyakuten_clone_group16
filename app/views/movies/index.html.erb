@@ -1,1 +1,10 @@
-<h1>Movie一覧</h1>
+ <% @movies.each.with_index(1) do |movie, i| %>
+    
+    <div class="mt-5">
+    <div class="mx-auto" style="width: 200px;">
+    <p><nobr><%="Lv.#{i}：#{movie.title}" %></nobr></p>
+    <iframe width="560" height="315" src="<%=movie.url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </div>
+  <% end %>
+
