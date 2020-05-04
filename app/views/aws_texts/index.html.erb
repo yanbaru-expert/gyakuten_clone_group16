@@ -2,7 +2,7 @@
   <h2>AWS教材の一覧ページ</h2>
 </div>
 
-<div class="table-container">
+  <div class="table-container">
   <table class="table table-striped">
     <thead class="aws-table-head text-white">
         <tr>
@@ -11,73 +11,14 @@
         </tr>
     </thead>
     <tbody>
+      <% @aws_texts.each do |aws_text| %>
         <tr>
-            <td>1</td>
+            <td><%= "#{aws_text.id}" %></td>
             <td>
-              <a href= "#">【 第1章 】ネットワーク環境設定</a>
+              <a href= "#"><%= "#{aws_text.title}" %></a>
             </td>
         </tr>
-        <tr>
-            <td>2</td>
-            <td>
-              <a href = "#">【 第2章 】RDSの設定</a>
-            </td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>
-              <a href = "#">【 第3章 】EC2の設定</a>
-            </td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>
-              <a href = "#">【 第4章 】サーバー環境の構築</a>
-            </td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>
-              <a href = "#">【 第5章 】Railsアプリを配置する</a>
-            </td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>
-              <a href = "#">【 第6章 】ロードバランサーを設定する</a>
-            </td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>
-              <a href = "#">【 第7章 】Railsアプリの起動</a>
-            </td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>
-              <a href = "#">【 第8章 】ドメインの取得</a>
-            </td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>
-              <a href = "#">【 第9章 】IPアドレスとドメインの関連付け設定</a>
-            </td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>
-              <a href = "#">【 第10章 】ACMでSSL証明書の取得</a>
-            </td>
-        </tr>
-        <tr>
-            <td>11</td>
-            <td>
-              <a href = "#">【 第11章 】https化に向けた設定</a>
-            </td>
-        </tr>
-
+      <% end %>
     </tbody>
   </table>
-</div>
+  </div>
