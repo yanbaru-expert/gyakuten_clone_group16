@@ -11,9 +11,9 @@
         </tr>
     </thead>
     <tbody>
-      <% @aws_texts.each do |aws_text| %>
+      <% @aws_texts.each.with_index(1) do |aws_text,i| %>
         <tr>
-            <td><%= "#{aws_text.id}" %></td>
+            <td><%= "#{i}" %></td>
             <td>
               <a href= "#"><%= "#{aws_text.title}" %></a>
             </td>
