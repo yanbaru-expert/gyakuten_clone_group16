@@ -1,0 +1,24 @@
+<div class = "text-center">
+  <h2>AWS教材の一覧ページ</h2>
+</div>
+
+  <div class="table-container">
+  <table class="table table-striped">
+    <thead class="aws-table-head text-white">
+        <tr>
+            <th>No.</th>
+            <th>内容</th>
+        </tr>
+    </thead>
+    <tbody>
+      <% @aws_texts.each.with_index(1) do |aws_text,i| %>
+        <tr>
+            <td><%= "#{i}" %></td>
+            <td>
+              <a href= "#"><%= "#{aws_text.title}" %></a>
+            </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  </div>
