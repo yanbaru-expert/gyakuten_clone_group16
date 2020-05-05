@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root to: 'movies#index'
 
-  get 'questions', to: 'questions#index'
+  resources :questions
+  
 end
