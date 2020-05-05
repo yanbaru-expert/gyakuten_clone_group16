@@ -1,21 +1,8 @@
-<div class="question-container">
-    
-        <% @questions.each do |question| %>
-        
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="question-title">
-                        <p><%= link_to question.title, root_path %></p>
-                    </div>
-                </div>   
-                <div class="col-md-4">
-                    <div class="question-text">
-                        <p>質問日　<%= l question.created_at, format: :gyakuten %></P>
-                    </div>
-                </div>
-            </div>
-        
-        <% end %>
-   
-</div>
+<% @questions.each do |question| %>
+    <%= link_to question_path(question) do %>
+        <h4><%= link_to question.title, root_path %></h4>
+        <p>質問日　<%= l question.created_at, format: :gyakuten %></P>
+    <% end %>        
+<% end %>
+
 
