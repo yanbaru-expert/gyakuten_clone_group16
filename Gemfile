@@ -16,7 +16,8 @@ gem 'activeadmin'
 gem 'devise'
 gem 'devise-i18n'
 gem 'rails-i18n'
-
+gem 'redcarpet'
+gem 'coderay'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

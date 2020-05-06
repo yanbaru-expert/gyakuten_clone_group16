@@ -11,13 +11,13 @@
       Rails
       </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="/">動画教材</a>
+      <%= link_to "動画教材", root_path, class:"dropdown-item" %>
       <a class="dropdown-item" href="#">テキスト教材</a>
       <a class="dropdown-item" href="/questions">質問集</a>
     </div>
     </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">AWSテキスト教材</a>
+        <a class="nav-link" href="/aws_texts">AWSテキスト教材</a>
       </li>
 
     <% if user_signed_in? %>
