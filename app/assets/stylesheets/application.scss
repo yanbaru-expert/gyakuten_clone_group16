@@ -6,11 +6,23 @@
     padding: 2rem;
   }
 
-  .table-container {
+.table-container {
     margin: 0 auto;
     width: 710px;
   }
 
 .aws-table-head {
     background-color: #007bff;
+  }
+
+.aws-text-content {
+    width: 710px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 50px 0 160px 0;
+  }
+
+.content {
+   margin: 0 auto; 
+   text-align: center;
   }

@@ -15,7 +15,7 @@
         <tr>
             <td><%= "#{i}" %></td>
             <td>
-              <a href= "#"><%= "#{aws_text.title}" %></a>
+              <%= link_to "#{aws_text.title}", aws_text_path(aws_text.id) %>
             </td>
         </tr>
       <% end %>
