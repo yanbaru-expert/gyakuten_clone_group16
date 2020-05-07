@@ -13,14 +13,13 @@
     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
       <%= link_to "動画教材", root_path, class:"dropdown-item" %>
       <a class="dropdown-item" href="#">テキスト教材</a>
+      <a class="dropdown-item" href="/questions">質問集</a>
     </div>
     </li>
       <li class="nav-item active">
         <a class="nav-link" href="/aws_texts">AWSテキスト教材</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">質問集</a>
-      </li>
+
     <% if user_signed_in? %>
       <li class="nav-item active">
     <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'nav-link' %>

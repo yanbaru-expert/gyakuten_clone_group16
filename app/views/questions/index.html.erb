@@ -1,0 +1,10 @@
+<div class="container-login">
+    <% @questions.each do |question| %>
+        <%= link_to question_path(question) do %>
+            <div class="question py-5 row">
+                <div class="col-7"><%= question.title %></div>
+                <div class="col-5 text-right"><%= l question.created_at, format: :gyakuten %></div>
+            </div>
+        <% end %>
+    <% end %>
+</div>
