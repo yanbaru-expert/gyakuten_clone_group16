@@ -3,8 +3,8 @@
     
     <% if @question.errors.any? %> 
         <% @question.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+            <li><%= message %></li>
+        <% end %>
     <% end %>
     
     <%= form_with model: @question, local: true do |f| %>
