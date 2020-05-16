@@ -9,7 +9,9 @@ class QuestionsController < ApplicationController
         if @question.save
             redirect_to questions_path, notice: "投稿に成功しました。"
         else
-            redirect_to questions_path, notice: "投稿に失敗しました。"
+            @questions = Question.all.order("id DESC")
+            flash.now[:alert] = "投稿に失敗しました。"
+            render :index
         end
     end
 

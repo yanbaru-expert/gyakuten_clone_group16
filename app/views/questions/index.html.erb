@@ -2,9 +2,9 @@
     <h4>新規登録</h4>
     
     <% if @question.errors.any? %> 
-        <% ＠question.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
-        <% end %>
+        <% @question.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
     <% end %>
     
     <%= form_with model: @question, local: true do |f| %>
