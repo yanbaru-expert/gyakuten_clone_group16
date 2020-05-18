@@ -5,5 +5,11 @@ class CreateQuestions < ActiveRecord::Migration[6.0]
       t.text :detail
       t.timestamps
     end
+
+    create_table :detail do |t|
+      t.string :title
+      t.text :detail
+      t.string :answer
+    end
   end
 end
