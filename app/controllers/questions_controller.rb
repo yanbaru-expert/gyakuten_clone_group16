@@ -13,12 +13,13 @@ class QuestionsController < ApplicationController
             flash.now[:alert] = "投稿に失敗しました。"
             render :index
         end
+    end
 
     def show
         @question = Question.find(params[:id])
     end
 
-    end
+    
 
     
     private
