@@ -6,10 +6,5 @@ class CreateQuestions < ActiveRecord::Migration[6.0]
       t.timestamps
     end
 
-    create_table :solutions do |t|
-      t.string :title
-      t.text :detail
-      t.string :answer
-    end
   end
 end

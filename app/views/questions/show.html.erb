@@ -1,15 +1,5 @@
 <div class="container-login">
 
-    <%= form_with model: @question, local: true do |f| %>
-        <div class="field">
-            <%= f.label :【質問】%>
-            <%= @question.title %>
-        </div>
-
-        <div class="field">
-            <%= f.label :【詳細】%>
-            <%= @question.content %>
-        </div>
-    <% end %>
-
+<%= @question.title %>
+<%= @question.detail %>
 </div>
