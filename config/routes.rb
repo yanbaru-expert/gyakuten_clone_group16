@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   root to: 'movies#index'
   resources :aws_texts
   resources :questions
-  resources :live_coding
+  resources :live_codings
 end
