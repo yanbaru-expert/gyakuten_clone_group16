@@ -1,0 +1,2 @@
+class LiveCoding < ApplicationRecord
+end
