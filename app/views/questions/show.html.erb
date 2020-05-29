@@ -10,6 +10,14 @@
       <h3>【詳細】</h3>
       <%= markdown(@question.detail).html_safe %>
       </div>
+      <hr>
+      <% @solutions.each.with_index(1) do |solution, i| %>
+        <div class="answer">
+        <h3>【回答<%= i %>】</h3>
+        <%= markdown(solution.answer).html_safe %>
+        </div>
+      <% end %>
+    </section> 
   </div>
-  </section>
+  <%= render 'questions/solution_form' %>
 </div>

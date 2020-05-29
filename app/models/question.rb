@@ -1,5 +1,5 @@
 class Question < ApplicationRecord
-  has_many :answer
+  has_many :solutions
 
     validates :title, presence: true
     validates :detail, presence: true  
