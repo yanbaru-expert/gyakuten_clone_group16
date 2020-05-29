@@ -1,4 +1,4 @@
-<% @live_codings.each.with_index(1) do |live_coding, i| %>
+<% @live_codings.each.with_index(@live_codings.offset_value + 1) do |live_coding, i| %>
   <div class="mt-5">
   <div align="center">
   <p><nobr><%= "Lv.#{i}： #{live_coding.title}" %></nobr></p>
@@ -6,3 +6,4 @@
   </div>
   </div>
 <% end %>
+<div class="pagination justify-content-center"><%= paginate(@live_codings) %></div>
