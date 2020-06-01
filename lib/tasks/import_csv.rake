@@ -65,6 +65,8 @@ namespace :import_csv do
      puts "インポートに失敗：UnknownAttributeError"
    end
   end
+  
+  desc "php_lecture.csvをphp_lectureにインポートするタスク"
 
   task php_lectures: :environment do
 
