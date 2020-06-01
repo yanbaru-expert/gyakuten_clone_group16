@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root to: 'movies#index'
   resources :aws_texts, only: [:index, :show]
-  resources :questions
   resources :live_codings, only: [:index]
+  resources :questions, only: [:index, :create, :show] do
+    resource :solutions, only: :create
+  end
 end
