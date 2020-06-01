@@ -1,0 +1,2 @@
+class PhpLecture < ApplicationRecord
+end
