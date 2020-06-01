@@ -1,0 +1,8 @@
+<% @live_codings.each.with_index(1) do |live_coding, i| %>
+  <div class="mt-5">
+  <div align="center">
+  <p><nobr><%= "#{live_coding.title}" %></nobr></p>
+  <iframe width="560" height="315" src="<%=live_coding.url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  </div>
+<% end %>
