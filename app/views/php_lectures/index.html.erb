@@ -1,0 +1,8 @@
+<% @php_lectures.each.with_index(1) do |php_lecture, i| %>
+  <div class="mt-5">
+    <div class="text-center">
+      <p><%= "#{php_lecture.title}" %></p>
+        <iframe width="560" height="315" src="<%=php_lecture.url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+<% end %>
