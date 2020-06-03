@@ -1,0 +1,9 @@
+<% @talks.each.with_index(1) do |talk, i| %>
+  <div class="mt-5">
+    <div class="text-center">
+      <p><%= "#{talk.title}" %></p>
+        <iframe width="560" height="315" src="<%=talk.url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+<% end %>
+

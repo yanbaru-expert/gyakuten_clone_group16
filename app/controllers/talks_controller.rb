@@ -1,6 +1,6 @@
 class TalksController < ApplicationController
 
   def index 
-    @talks = Talks.all
+    @talks = Talk.all
   end
 end
