@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_06_04_010330) do
+=======
+ActiveRecord::Schema.define(version: 2020_06_03_050015) do
+>>>>>>> master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +48,13 @@ ActiveRecord::Schema.define(version: 2020_06_04_010330) do
   create_table "aws_texts", force: :cascade do |t|
     t.string "title"
     t.text "content"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "conversations", force: :cascade do |t|
+    t.string "title"
+    t.string "url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -92,6 +103,8 @@ ActiveRecord::Schema.define(version: 2020_06_04_010330) do
   end
 
   create_table "talking_videos", force: :cascade do |t|
+  create_table "talks", force: :cascade do |t|
+
     t.string "title"
     t.string "url"
     t.datetime "created_at", precision: 6, null: false
