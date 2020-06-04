@@ -1,0 +1,8 @@
+<% @movie_edit_courses.each.with_index(1) do |movie_edit_course, i| %>
+<div class="mt-5">
+    <div class="text-center">
+      <p><%= "#{movie_edit_course.title}" %></p>
+        <iframe width="560" height="315" src="<%=movie_edit_course.url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+<% end %>
