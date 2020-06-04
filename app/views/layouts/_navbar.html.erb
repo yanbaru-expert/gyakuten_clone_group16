@@ -25,6 +25,10 @@
         <a class="nav-link" href="/php_lectures">PHP講座</a>
       </li>
 
+      <li class="nav-item active">
+        <a class="nav-link" href="/talking_videos">対談</a>
+      </li>
+
     <% if user_signed_in? %>
       <li class="nav-item active">
     <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'nav-link' %>
