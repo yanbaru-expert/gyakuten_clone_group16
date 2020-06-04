@@ -6,11 +6,8 @@ Rails.application.routes.draw do
   resources :aws_texts, only: [:index, :show]
   resources :live_codings, only: [:index]
   resources :php_lectures, only: [:index]
-<<<<<<< HEAD
   resources :marketings, only: [:index]
-=======
   resources :talks, only: [:index]
->>>>>>> master
   resources :questions, only: [:index, :create, :show] do
     resource :solutions, only: :create
   end

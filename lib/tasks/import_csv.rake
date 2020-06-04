@@ -109,7 +109,7 @@ namespace :import_csv do
       puts "インポートに失敗：UnknownAttributeError"
     end
   end
->>>>>>> master
+  
 end
 
 
