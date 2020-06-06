@@ -1,0 +1,8 @@
+<% @marketings.each.with_index(1) do |marketing, i| %>
+  <div class="mt-5">
+    <div class="text-center">
+      <p><%= "Lv.#{i}： #{marketing.title}" %></p>
+        <iframe width="560" height="315" src="<%=marketing.url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+<% end %>
