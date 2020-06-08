@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :marketings, only: [:index]
   resources :talks, only: [:index]
   resources :writings, only: [:index]
+  resources :lines, only: [:index, :show]
   resources :movie_edit_courses, only: [:index]
   resources :questions, only: [:index, :create, :show] do
     resource :solutions, only: :create
