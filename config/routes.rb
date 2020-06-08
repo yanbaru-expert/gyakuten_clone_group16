@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :php_lectures, only: [:index]
   resources :marketings, only: [:index]
   resources :talks, only: [:index]
+  resources :writings, only: [:index]
   resources :movie_edit_courses, only: [:index]
   resources :questions, only: [:index, :create, :show] do
     resource :solutions, only: :create
