@@ -1,0 +1,30 @@
+<div class= "text-center">
+  <div class="line-text-color">
+    <h2>LINE@</h2>
+  </div>
+</div>
+
+  <div class="line-table-container">
+  <table class="table table-striped">
+    <thead class="line-table-head text-white">
+        <tr>
+            <th>No.</th>
+            <th>ジャンル</th>
+            <th>内容</th>
+        </tr>
+    </thead>
+    <tbody>
+      <% @lines.each.with_index(1) do |line,i| %>
+        <tr>
+            <td><%= "#{i}" %></td>
+            <td>
+              <%= "#{line.genre}" %>
+            </td>
+            <td>
+              <%= link_to "#{line.title}", line_path(line.id) %>
+            </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  </div>
