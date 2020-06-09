@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :php_lectures, only: [:index]
   resources :talks, only: [:index]
   resources :movie_edit_courses, only: [:index]
-  resources :text_materials, only: [:index]
+  resources :texts, only: [:index]
   resources :questions, only: [:index, :create, :show] do
     resource :solutions, only: :create
   end

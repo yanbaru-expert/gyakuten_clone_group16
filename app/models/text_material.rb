@@ -1,2 +1,0 @@
-class TextMaterial < ApplicationRecord
-end

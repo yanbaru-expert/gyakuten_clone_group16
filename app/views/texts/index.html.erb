@@ -1,0 +1,15 @@
+<form class= seach-form>
+   <i class="fas fa-search "></i>
+   <input type="text" class="form-control" placeholder="教材を探す">
+</form>
+
+<h2 class="text-wrapper">テキスト教材</h2>
+
+<% @texts.each do |text| %>
+  <div class="texts-contents">
+  <%= link_to texts_path(text.id) do %>
+    <h3><%= text.title %></h3> 
+    <p><%= "【#{text.genre}】" %></p>
+  <% end %>
+  </div>
+<% end %>
