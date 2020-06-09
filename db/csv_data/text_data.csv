@@ -1,6 +1,5 @@
 genre,title,content
-Basic,Macのショートカットキー,
-パソコンになれてないなら、まずはショートカットキーから使えるようにしていきましょう。ここにあげてあるショートカットキーを使えないと、プログラミングの学習効率は全く上がらないです。
+Basic,Macのショートカットキー,"パソコンになれてないなら、まずはショートカットキーから使えるようにしていきましょう。ここにあげてあるショートカットキーを使えないと、プログラミングの学習効率は全く上がらないです。
 
 プログラマーなるなら必須中の必須なので、ぜひ使いこなせるようにしてください。絶対にこれだけは覚えて！というショートカットキーは以下の通り。
 
@@ -54,8 +53,8 @@ shift + tab
 
 # まとめ
 パソコンの操作スピードを上げるためにも、ショートカットキーを活用することはとても重要になってきます。特に、コピー&ペーストや上書き保存は、ショートカットキーを使用するのとそうでないのでは大きな差が出てくるので、ぜひ使えるようにしておきましょう。
-
-Basic,Linuxコマンド,Linuxコマンドは、Ruby on Railsアプリを開発するときにもよく使うコマンドです。Macでプログラミングを学ぶ際に、このLinuxコマンドの知識が必須となりますので、一つ一つ確認していきましょう。
+"
+Basic,Linuxコマンド,"Linuxコマンドは、Ruby on Railsアプリを開発するときにもよく使うコマンドです。Macでプログラミングを学ぶ際に、このLinuxコマンドの知識が必須となりますので、一つ一つ確認していきましょう。
 
 また、Linuxコマンドにはたくさんの種類がありますが、こちらではよく使用するコマンドを抽出して載せるようにします。上に書いてあるものから順に覚えて行くと無駄なく学習することができます。
 
@@ -126,9 +125,8 @@ mkdir sample
 ```
 
 # まとめ
-Linuxコマンドは、Macの操作をする上ではとても重要なコマンドとなります。プログラミングをやるときにも、これらのコマンドはよく使用するのでぜひ使えるようにしてみてください。
-
-Basic,Slackを使用したいろんなマークダウン記法,Slackを使いこなすと、プログラミング学習の効率もぐんと上がる（特に質問の仕方が上手くなる）ので、ぜひマークダウン記法を利用してみてください！
+Linuxコマンドは、Macの操作をする上ではとても重要なコマンドとなります。プログラミングをやるときにも、これらのコマンドはよく使用するのでぜひ使えるようにしてみてください。"
+Basic,Slackを使用したいろんなマークダウン記法,"Slackを使いこなすと、プログラミング学習の効率もぐんと上がる（特に質問の仕方が上手くなる）ので、ぜひマークダウン記法を利用してみてください！
 
 
 |No.|記入方法|用途|
@@ -154,9 +152,8 @@ No.4の書き方
 ```
 
 # まとめ
-Slackにおいてマークダウンを使用するとコミュニケーション効率が圧倒的に上がるので、ぜひ活用して見てください。
-
-Git,Gitの基本,Gitとは、プログラムのソースコードなどの変更履歴を記録・追跡するためのバージョン管理システムのことです。バージョン管理とは、その名の通り、複数存在するソースコードのバージョンを管理することを指します。
+Slackにおいてマークダウンを使用するとコミュニケーション効率が圧倒的に上がるので、ぜひ活用して見てください。"
+Git,Gitの基本,"Gitとは、プログラムのソースコードなどの変更履歴を記録・追跡するためのバージョン管理システムのことです。バージョン管理とは、その名の通り、複数存在するソースコードのバージョンを管理することを指します。
 
 このGitを使用することによって、変更履歴をさかのぼってソースコードを元の状態に戻す事ができ、複数人での共同開発も可能になります。
 
@@ -268,7 +265,7 @@ Gitをパソコンで使用できるようにするためには、まずはイ�
 以下のコマンドをターミナルにコピー&ペーストして実行してください。それだけで、Homebrewがインストールできます。
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e ""$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)""
 ```
 
 Homebrewのインストールが終わったら、以下のコマンドをターミナルに入力し、Homebrewを使用してGitをインストールします。
@@ -347,7 +344,7 @@ nothing to commit, working tree clean
 これにより、各コミットにおいてどのような変更が行われたのかを把握しやすくすることができます。
 
 ```
-git commit -m "init commit"
+git commit -m ""init commit""
 ```
 
 ## コミットまでの流れのおさらい
@@ -368,7 +365,7 @@ git add .
 インデックスに登録したファイルをコミットします。
 
 ```
-git commit -m "change message"
+git commit -m ""change message""
 ```
 
 これで、ファイルを変更してからコミットまでの一連の流れが終了です。
@@ -417,7 +414,7 @@ pick 65e1b59 change message
 # r, reword = use commit, but edit the commit message
 # e, edit = use commit, but stop for amending
 # s, squash = use commit, but meld into previous commit
-# f, fixup = like "squash", but discard this commit's log message
+# f, fixup = like ""squash"", but discard this commit's log message
 # x, exec = run command (the rest of the line) using shell
 # d, drop = remove commit
 #
@@ -431,7 +428,7 @@ pick 65e1b59 change message
 ~
 ~
 ~
-"~/git_sample/.git/rebase-merge/git-rebase-todo" 20L, 680C
+""~/git_sample/.git/rebase-merge/git-rebase-todo"" 20L, 680C
 ```
 
 その表示の中で、一番上に書かれている`pick`の部分を`r`に変更するとコミットメッセージを編集することができます。
@@ -448,7 +445,7 @@ pick 65e1b59 change message
 # r, reword = use commit, but edit the commit message
 # e, edit = use commit, but stop for amending
 # s, squash = use commit, but meld into previous commit
-# f, fixup = like "squash", but discard this commit's log message
+# f, fixup = like ""squash"", but discard this commit's log message
 # x, exec = run command (the rest of the line) using shell
 # d, drop = remove commit
 #
@@ -477,7 +474,7 @@ r 65e1b59 change message
 # r, reword = use commit, but edit the commit message
 # e, edit = use commit, but stop for amending
 # s, squash = use commit, but meld into previous commit
-# f, fixup = like "squash", but discard this commit's log message
+# f, fixup = like ""squash"", but discard this commit's log message
 # x, exec = run command (the rest of the line) using shell
 # d, drop = remove commit
 #
@@ -491,7 +488,7 @@ r 65e1b59 change message
 ~
 ~
 ~
-"~/git_sample/.git/rebase-merge/git-rebase-todo" 20L, 680C
+""~/git_sample/.git/rebase-merge/git-rebase-todo"" 20L, 680C
 ```
 
 書き換えられたら、キーボードの左上にある`esc`を押し、`:wq`で上書き保存します。そうすると、次にコミットメッセージが表示されます。
@@ -520,7 +517,7 @@ chnage message
 ~
 ~
 ~
-"~/git_sample/.git/COMMIT_EDITMSG" 17L, 563C
+""~/git_sample/.git/COMMIT_EDITMSG"" 17L, 563C
 ```
 
 コミットメッセージが確認できたら、`i`をクリックして`INSERT`モードに切り替え、コミットメッセージを変更します。
@@ -549,7 +546,7 @@ change hello to good morning
 ~
 ~
 ~
-"~/git_sample/.git/COMMIT_EDITMSG" 17L, 563C
+""~/git_sample/.git/COMMIT_EDITMSG"" 17L, 563C
 ```
 
 メッセージが変更できたら、`esc`を押し、`:wq`で変更内容を保存しましょう。そのあと、以下のコマンドを入力してコミットメッセージが変更されていることを確認してください。
@@ -616,7 +613,7 @@ git add .
 変更履歴を保存する
 
 ```
-git commit -m "changed english to japanese"
+git commit -m ""changed english to japanese""
 ```
 
 変更履歴が保存できたら、
@@ -668,9 +665,8 @@ git branch -d sample
 
 なので、ぜひご自身の成長を楽しみながら続けていっていただけると幸いです。
 
-お疲れ様でした！
-
-Git,Gitで使用するテキストエディタ、Vimの使い方,Vimとは、かなり歴史のあるテキストエディタです。初心者からすると難しそうな印象ですが、コアなユーザーの多いエディタです。
+お疲れ様でした！"
+Git,Gitで使用するテキストエディタ、Vimの使い方,"Vimとは、かなり歴史のあるテキストエディタです。初心者からすると難しそうな印象ですが、コアなユーザーの多いエディタです。
 
 # Vimの使い方
 Vimはモードを使い分けることによって色々な操作ができるようになっています。
@@ -712,8 +708,8 @@ Vimでは、ファイルを編集した後の操作にもコマンドを使用�
 Vimは使い方にちょっと癖がありますが、慣れれば普段のテキストエディタと同じように使えます。人によっては、Vimの方が圧倒的にいいという人もいるくらいです。
 
 AWSやGitでも、Vimを使用してファイルを編集することがあるので、基本的な使い方はマスターしておきましょう。現場でも、きっと使う場面が出てくるはずですよ。
-
-Git,Gitコマンド一覧,Gitに関して、よく使うコマンドを一覧にしています。復習にお役立てください。
+"
+Git,Gitコマンド一覧,"Gitに関して、よく使うコマンドを一覧にしています。復習にお役立てください。
 
 Gitでのバージョン管理を開始する
 
@@ -736,7 +732,7 @@ git reset HEAD config/database.yml
 変更履歴を保存
 
 ```
-git commit -m "message"
+git commit -m ""message""
 ```
 
 コミットの履歴を確認
@@ -857,8 +853,8 @@ git rebase -i HEAD^^^
 
 ```
 git checkout .
-```
-Ruby,入出力を行うためのメソッド一覧,Rubyには、ターミナルに様々なデータを表示するためのメソッドがいくつか用意されています。
+```"
+Ruby,入出力を行うためのメソッド一覧,"Rubyには、ターミナルに様々なデータを表示するためのメソッドがいくつか用意されています。
 
 - puts
 - p
@@ -877,10 +873,10 @@ Ruby,入出力を行うためのメソッド一覧,Rubyには、ターミナル�
 putsの基本的な使い方は以下の通りです。
 
 ```ruby
-puts "Hello World!!"
+puts ""Hello World!!""
 ```
 
-以上のように書くと、ターミナルに `Hello World!!` という文字列が表示されます。ここで注意しなければいけないのは、文字列を表示するときは `""（ダブルクウォーテーション）` で囲むということです。これがないと文字列として認識してもらえずエラーになるので注意してください。
+以上のように書くと、ターミナルに `Hello World!!` という文字列が表示されます。ここで注意しなければいけないのは、文字列を表示するときは `""""（ダブルクウォーテーション）` で囲むということです。これがないと文字列として認識してもらえずエラーになるので注意してください。
 
 それでは実際に、 `puts` を使って `Hello World!!` を表示してみましょう。そのためにまずは、Rubyのファイルを作成します。テキストエディタを立ち上げ、 `command + s` で保存しましょう。
 
@@ -904,10 +900,10 @@ hello.rb
 
 ファイルが保存できたら、 `hello.rb` に以下のコードを書きましょう。
 
-`puts` のコードを入力する際には、 `"Hello World!!"` との間に半角スペースを入れてください。
+`puts` のコードを入力する際には、 `""Hello World!!""` との間に半角スペースを入れてください。
 
 ```ruby
-puts "Hello World!!"
+puts ""Hello World!!""
 ```
 
 そして、コードを書いたら必ず `command + s` で上書き保存する癖をつけてください。本当によく使う機能なので、このショートカットキーは覚えておくとかなり楽です。
@@ -940,11 +936,11 @@ Hello World!!
 
 プログラミングでは、文字のことを文字列、数字のことを整数や少数などという風に区別します。
 
-例えば、 `"1"` は文字列 `1` は整数となり、全く別のデータとして扱われることに注意してください。
+例えば、 `""1""` は文字列 `1` は整数となり、全く別のデータとして扱われることに注意してください。
 
-`1 + 2` は答えが `3` として計算できますが、 `"1 + 2"` はただの文字列なので計算できません。
+`1 + 2` は答えが `3` として計算できますが、 `""1 + 2""` はただの文字列なので計算できません。
 
-また、文字列の場合は `'（シングルクウォーテーション）` または `"（ダブルクウォーテーション）` で値を囲む必要があります。
+また、文字列の場合は `'（シングルクウォーテーション）` または `""（ダブルクウォーテーション）` で値を囲む必要があります。
 
 基本的にはダブルクウォーテーションが多いのですが、2種類の表現方法があることを頭に入れておいてください。
 
@@ -952,7 +948,7 @@ Hello World!!
 
 ```ruby
 puts 'Single Hello World'
-puts "Double Hello World"
+puts ""Double Hello World""
 ```
 
 ターミナルで以下のコマンドを入力し、プログラムを実行しましょう。
@@ -975,7 +971,7 @@ Double Hello World
 ```ruby
 # 文字を出力するコード
 puts 'Single Hello World'
-puts "Double Hello World"
+puts ""Double Hello World""
 ```
 
 ターミナルで以下のコマンドを入力し、プログラムを実行しましょう。
@@ -1000,7 +996,7 @@ Double Hello World
 # シングルクウォーテーションでの記述
 puts 'Single Hello World'
 # ダブルクウォーテーションでの記述
-puts "Double Hello World"
+puts ""Double Hello World""
 ```
 
 ## 数字の表示
@@ -1010,7 +1006,7 @@ puts "Double Hello World"
 puts 3
 ```
 
-文字列のように `""` を書く必要はありません。
+文字列のように `""""` を書く必要はありません。
 
 それでは、 `number.rb` をデスクトップに作成し、以下のコードを書いて実行してみましょう。
 
@@ -1034,7 +1030,7 @@ puts 1
 1
 ```
 
-以上のように、整数を表示するときは `""` で囲む必要がないことを理解しておきましょう。
+以上のように、整数を表示するときは `""""` で囲む必要がないことを理解しておきましょう。
 
 また、計算式を書くと自動で値を計算し、その結果を出力してくれます。
 
@@ -1042,7 +1038,7 @@ puts 1
 # 数字の場合
 puts 1 + 3
 # 文字列の場合
-puts "1 + 3"
+puts ""1 + 3""
 ```
 
 実行結果
@@ -1052,7 +1048,7 @@ puts "1 + 3"
 1 + 3
 ```
 
-このように、Rubyでは計算結果を `puts` で出力することもできます。また、`""` で囲んだ場合は数字ではなく文字列として認識されるので、計算はできないことに注意しましょう。
+このように、Rubyでは計算結果を `puts` で出力することもできます。また、`""""` で囲んだ場合は数字ではなく文字列として認識されるので、計算はできないことに注意しましょう。
 
 今回は足し算を例に出しましたが、Rubyに用意されている計算方法はそれだけではなく、引き算、掛け算、割り算などの計算も行えます。良い機会なので、Rubyでの四則演算についてもついでに理解しておきましょう。
 
@@ -1095,7 +1091,7 @@ puts 2 + 2 + 2
 ただし、文字と数字を続けて表示する場合、以下のように書くとエラーになります。
 
 ```ruby
-puts "2 + 2 = " + 4
+puts ""2 + 2 = "" + 4
 ```
 
 実行結果
@@ -1111,7 +1107,7 @@ TypeError: no implicit conversion of Fixnum into String
 もし、上記のやり方でエラーを回避したい場合は、`to_s`メソッドを使用して数字を文字に変換してあげます。
 
 ```ruby
-puts "2 + 2 = " + 4.to_s
+puts ""2 + 2 = "" + 4.to_s
 ```
 
 実行結果
@@ -1151,11 +1147,11 @@ Rubyには、以下のような種類のオブジェクトが存在ます。
 # 小数:Float
 1.0
 # 文字列:String
-"文字列"
+""文字列""
 # 配列:Array
 [1, 2, 3]
 # 連想配列:Hash
-{"key" => "value"}
+{""key"" => ""value""}
 # true:TrueClass
 true
 # false:FalseClass
@@ -1170,29 +1166,29 @@ Rubyでは以上のようなオブジェクトの種類を意識する必要が�
 `puts`の場合は出力されたデータがどのデータ型かわかりませんでした。しかし、`p`メソッドを利用すると、データ型の種類を確認することができます。
 
 ```ruby
-p "こんにちは"
+p ""こんにちは""
 p 1
 ```
 
 実行結果
 
 ```
-"こんにちは"
+""こんにちは""
 1
 ```
 
 `puts`と`p`を比較してみると、`p`を利用するメリットがわかりやすいかと思います。
 
 ```
-puts "1"
-p "1"
+puts ""1""
+p ""1""
 ```
 
 実行結果
 
 ```
 1
-"1"
+""1""
 ```
 
 以上のように、`puts`で出力すると`1`という値が文字列なのか数字なのか判断できないのですが、`p`で出力するとそれが文字列だとわかります。このように、プログラムの中で使用されているデータがどのデータ型なのかを把握したい場合、`p`がとても役に立ちます。
@@ -1201,22 +1197,22 @@ p "1"
 `print`は、改行を行わずに処理結果を表示するメソッドです。そこまで使用頻度は高くないので、特に意識して覚える必要はありません。`print`に関しては、`puts`と比較すると違いがわかりやすいので以下のコードを書いてみましょう。
 
 ```ruby
-puts "私の"
-puts "名前は"
-puts "神里です。"
-puts "-----------"
-print "私の"
-print "名前は"
-print "神里です。"
+puts ""私の""
+puts ""名前は""
+puts ""神里です。""
+puts ""-----------""
+print ""私の""
+print ""名前は""
+print ""神里です。""
 ```
 
 # 複数のデータを出力
 `puts` `p` `print`に関しては、複数の値を出力させることも可能です。
 
 ```ruby
-puts "お", "は", "よ", "う"
-p "お", "は", "よ", "う"
-print "お", "は", "よ", "う"
+puts ""お"", ""は"", ""よ"", ""う""
+p ""お"", ""は"", ""よ"", ""う""
+print ""お"", ""は"", ""よ"", ""う""
 ```
 
 実行結果
@@ -1226,10 +1222,10 @@ print "お", "は", "よ", "う"
 は
 よ
 う
-"お"
-"は"
-"よ"
-"う"
+""お""
+""は""
+""よ""
+""う""
 おはよう
 ```
 
@@ -1256,9 +1252,9 @@ TEXT
 
 ```ruby
 # putsを使用した場合
-puts "おはよう"
-puts "こんにちは"
-puts "こんばんは"
+puts ""おはよう""
+puts ""こんにちは""
+puts ""こんばんは""
 
 # ヒアドキュメントを使用した場合
 puts <<~TEXT
@@ -1337,10 +1333,10 @@ puts <<~111
 
 ```ruby
 # putsを使用した場合（空文字で改行）
-puts "おはよう"
-puts ""
-puts "こんにちは"
-puts "こんばんは"
+puts ""おはよう""
+puts """"
+puts ""こんにちは""
+puts ""こんばんは""
 
 # ヒアドキュメントを使用した場合（Enterで改行）
 puts <<~TEXT
@@ -1373,8 +1369,153 @@ TEXT
 - p
 - print
 
-これらのメソッドは、現場でもいろんな場面で利用されます。うまく使いこなせれば開発が楽になるので、ぜひ使ってみてください。
-Ruby,条件分岐,条件分岐とは、「もし〜だったら〜の処理をする」というように、条件によって行う処理を変えるために使用されるものです。条件分岐を実装するときには`if`や`unless`を使用します。ではさっそく、それぞれの使い方を学んでいきましょう。
+これらのメソッドは、現場でもいろんな場面で利用されます。うまく使いこなせれば開発が楽になるので、ぜひ使ってみてください。"
+Ruby,変数,"変数とは、値を入れておく箱のようなものです。この変数を使用すると、以下のようなメリットがあります。
+
+- 値を使いまわせる
+- 値を覚える必要がなくなる
+- 変更に強いプログラムが組める
+
+プログラムを組む上で、変数はかなり使用しますのでしっかりと理解しておきましょう。といっても、コードを書いていくうちに理解できるものなので、そこまで身構える必要はありません。
+
+# 定義と代入
+変数は、以下のように定義します。
+
+```ruby
+# name が変数
+# ""satou"" が変数に格納する値
+name = ""satou""
+```
+
+上のコードのように、`name`という入れ物を用意することで、`satou`という文字列が変数に格納されます。また、`name`の部分は自分の好きなように名前をつけてあげて大丈夫です。例えば、以下のようにいろんな変数を定義することができます。
+
+```ruby
+name = ""satou""
+item = ""book""
+price = 10000
+```
+
+# 式展開
+変数の値を文字列の中で表示したい場合、以下のように記述します。
+
+```ruby
+name = ""Tanaka""
+
+# 式展開を書くと表示される
+puts ""Hello!! #{name}""
+
+# そのまま変数名を書くと変数の値は表示されない
+puts ""Hello!! name""
+```
+
+実行結果
+
+```
+Hello!! Tanaka
+Hello!! name
+```
+
+また、式展開はヒアドキュメントの中で使用することもできます。
+
+```ruby
+
+name = ""Tanaka""
+
+# ヒアドキュメントの中で式展開
+puts <<~TEXT
+Hello!! #{name}
+
+You are very cool!!
+Let's enjoy programming together!!
+TEXT
+```
+
+# サンプルプログラム
+では、変数を利用して、人の名前、年齢、住所、電話番号などの個人情報を表示するプログラムを書いてみましょう。
+
+まずはファイルを作成します。テキストエディタを開いて「名前をつけて保存」を選択し、ファイル名を以下のようにして保存しましょう。`variable`は、「変数」という意味です。
+
+```
+variable.rb
+```
+
+ファイルが作成できたら、`variable.rb`にどんどんコードを追加していきます。
+
+その際、随時`command + s(windowsは ctrl + s)`で上書き保存してから実行するようにしましょう。
+
+記述したコードを実行するときは、以下のコマンドをターミナルから入力します。コー
+ドが書けたら、このコマンドを実行して動作確認を行いましょう。
+
+```
+ruby variable.rb
+```
+
+それではさっそく、コードを書いていきます。
+
+まずはそれぞれの変数を定義し、値を格納するところから。その際、どういうデータを格納する変数かがわかりやすいような変数名をつけてあげると、コードがグッと読みやすくなります。
+
+```ruby
+# 名前情報を入れる変数
+name = ""Satou""
+# 年齢情報を入れる変数
+age = 33
+# 住所情報を入れる変数
+address = ""Tokyo""
+# 電話番号を入れる変数
+tell = ""080-2343-9183""
+```
+
+次に、それらの変数に格納した値を、式展開を用いてわかりやすい文章で表示してみましょう。
+
+```ruby
+# 名前情報を入れる変数
+name = ""Satou""
+# 年齢情報を入れる変数
+age = 33
+# 住所情報を入れる変数
+address = ""Tokyo""
+# 電話番号を入れる変数
+tell = ""080-2343-9183""
+
+# 変数に格納したデータを式展開で表示
+puts ""【自己紹介】""
+puts ""私の名前は#{name}です。""
+puts ""年齢は#{age}です。""
+puts ""今住んでいるところは#{address}です。""
+puts ""電話番号は#{tell}です。""
+puts ""宜しくお願いいたします！""
+```
+
+式展開で変数に格納したデータを表示することができたら、次はそれらのコードをヒアドキュメントに置き換えてリファクタリングしていきます。
+
+ちなみに、リファクタリングとは、実行結果を変えずにコードを改善することです。これにより、コードの見通しや処理の効率が向上します。
+
+```ruby
+# 名前情報を入れる変数
+name = ""Satou""
+# 年齢情報を入れる変数
+age = 33
+# 住所情報を入れる変数
+address = ""Tokyo""
+# 電話番号を入れる変数
+tell = ""080-2343-9183""
+
+# ヒアドキュメントを使って式展開
+puts <<~TEXT
+【自己紹介】
+私の名前は#{name}です。
+年齢は#{age}です。
+今住んでいるところは#{address}です。
+電話番号は#{tell}です。
+宜しくお願いいたします！
+TEXT
+```
+
+# まとめ
+変数はプログラミングの中でも使用する頻度がかなり高いです。これを使用することにより、コードの見通しが良くなったり、変更に強いプログラムを組むことができるようになります。
+
+ぜひ、コードを書くときも、変数に置き換えられる箇所はないかを考えてみてください。"
+Ruby,条件分岐,"条件分岐とは、「もし〜だったら〜の処理をする」というように、条件によって行う処理を変えるために使用されるものです。条件分岐を実装するときには`if`や`unless`を使用します。ではさっそく、それぞれの使い方を学んでいきましょう。
 
 ## if
 `if`の基本的な書き方は以下の通りとなります。
@@ -1383,7 +1524,7 @@ Ruby,条件分岐,条件分岐とは、「もし〜だったら〜の処理を�
 hp = 10
 
 if hp >= 10
-  puts "勇者のHPは10以上だ"
+  puts ""勇者のHPは10以上だ""
 end
 ```
 
@@ -1411,15 +1552,15 @@ if_sample.rb
 a = 10
 b = 15
 
-print "aはb以上？："
+print ""aはb以上？：""
 puts a >= b
-print "aはb以下？："
+print ""aはb以下？：""
 puts a <= b
-print "aはbより大きい？："
+print ""aはbより大きい？：""
 puts a > b
-print "aはbより小さい？："
+print ""aはbより小さい？：""
 puts a < b
-print "aはbと同じ？："
+print ""aはbと同じ？：""
 puts a == b
 ```
 
@@ -1446,12 +1587,12 @@ aはbと同じ？：false
 ```ruby
 # 条件がtrueの場合は実行される
 if true
-  puts "実行されます"
+  puts ""実行されます""
 end
 
 # 条件がfalseの場合は実行されない
 if false
-  puts "実行されません"
+  puts ""実行されません""
 end
 ```
 
@@ -1470,10 +1611,10 @@ end
 hp = 5
 
 if hp >= 10
-  puts "勇者のHPは10以上だ"
+  puts ""勇者のHPは10以上だ""
 else
   # ifの条件が成り立たない場合の処理
-  puts "勇者のHPは10より下だ"
+  puts ""勇者のHPは10より下だ""
 end
 ```
 
@@ -1485,11 +1626,11 @@ end
 hp = 5
 
 if hp >= 10
-  puts "勇者のHPは10以上だ"
+  puts ""勇者のHPは10以上だ""
 end
 
 if hp < 10
-  puts "勇者のHPは10より下だ"
+  puts ""勇者のHPは10より下だ""
 end
 ```
 
@@ -1504,16 +1645,16 @@ end
 hp = 3
 
 if hp > 10
-  puts "勇者は元気だ"
+  puts ""勇者は元気だ""
 # 複数の条件を指定するときに使う
 elsif hp > 5
-  puts "勇者は弱っている"
+  puts ""勇者は弱っている""
 elsif hp > 3
-  puts "勇者はかなり弱っている"
+  puts ""勇者はかなり弱っている""
 elsif hp > 0
-  puts "勇者は瀕死だ"
+  puts ""勇者は瀕死だ""
 else
-  puts "勇者はしんだ"
+  puts ""勇者はしんだ""
 end
 ```
 
@@ -1525,27 +1666,27 @@ end
 hp = 3
 
 if hp > 10
-  puts "勇者はピンピンしている"
+  puts ""勇者はピンピンしている""
 end
 
 if hp > 10
-  puts "勇者は元気だ"
+  puts ""勇者は元気だ""
 end
 
 if hp > 5
-  puts "勇者は弱っている"
+  puts ""勇者は弱っている""
 end
 
 if hp > 3
-  puts "勇者はかなり弱っている"
+  puts ""勇者はかなり弱っている""
 end
 
 if hp > 0
-  puts "勇者は瀕死だ"
+  puts ""勇者は瀕死だ""
 end
 
 if hp <= 0
-  puts "勇者はしんだ"
+  puts ""勇者はしんだ""
 end
 ```
 
@@ -1567,15 +1708,15 @@ month = 6
 case month
 # 比較対象と比較する値を記述
 when 3, 4, 5
-  puts "春です"
+  puts ""春です""
 when 6, 7, 8
-  puts "夏です"
+  puts ""夏です""
 when 9, 10, 11
-  puts "秋です"
+  puts ""秋です""
 when 12, 1, 2
-  puts "冬です"
+  puts ""冬です""
 else
-　puts "不正な値です"
+　puts ""不正な値です""
 end
 ```
 
@@ -1588,15 +1729,15 @@ month = 6
 case month
 # 比較対象と比較する値を記述
 when 3..5
-  puts "春です"
+  puts ""春です""
 when 6..8
-  puts "夏です"
+  puts ""夏です""
 when 9..11
-  puts "秋です"
+  puts ""秋です""
 when 12..2
-  puts "冬です"
+  puts ""冬です""
 else
-　puts "不正な値です"
+　puts ""不正な値です""
 end
 ```
 
@@ -1611,7 +1752,7 @@ end
 
 ```ruby
 # 省略形
-puts "勇者のHPは10以上だ" if hp >= 10
+puts ""勇者のHPは10以上だ"" if hp >= 10
 ```
 
 ## 三項演算子
@@ -1621,7 +1762,7 @@ puts "勇者のHPは10以上だ" if hp >= 10
 hp = 11
 
 # 条件式(true or false) ? trueの時に行いたい処理 : falseの時に行いたい処理
-puts hp > 10 ? "勇者のHPは10より大きいです" : "勇者のHPは10より小さいです"
+puts hp > 10 ? ""勇者のHPは10より大きいです"" : ""勇者のHPは10より小さいです""
 ```
 
 # サンプルプログラム
@@ -1698,20 +1839,20 @@ enemy_damage = brave_attack - enemy_defense
 enemy_hp = enemy_hp - enemy_damage
 
 # 敵に与えるダメージと残りHPの表示
-puts "敵に#{enemy_damage}のダメージを与えた。"
-puts "残りHPは#{enemy_hp}だ。"
+puts ""敵に#{enemy_damage}のダメージを与えた。""
+puts ""残りHPは#{enemy_hp}だ。""
 
 # 残りHPによってリアクションを変える
 if enemy_hp > 20
-  puts "敵は元気だ"
+  puts ""敵は元気だ""
 elsif enemy_hp > 10
-  puts "敵はちょっと弱っている"
+  puts ""敵はちょっと弱っている""
 elsif enemy_hp > 5
-  puts "敵はかなり弱っている"
+  puts ""敵はかなり弱っている""
 elsif enemy_hp > 0
-  puts "敵は瀕死だ"
+  puts ""敵は瀕死だ""
 else
-  puts "敵はしんだ"
+  puts ""敵はしんだ""
 end
 ```
 
@@ -1729,19 +1870,19 @@ enemy_defense = 10
 enemy_damage = brave_attack - enemy_defense
 enemy_hp = enemy_hp - enemy_damage
 
-puts "敵に#{enemy_damage}のダメージを与えた。"
-puts "残りHPは#{enemy_hp}だ。"
+puts ""敵に#{enemy_damage}のダメージを与えた。""
+puts ""残りHPは#{enemy_hp}だ。""
 
 if enemy_hp > 20
-  puts "敵は元気だ"
+  puts ""敵は元気だ""
 elsif enemy_hp > 10
-  puts "敵はちょっと弱っている"
+  puts ""敵はちょっと弱っている""
 elsif enemy_hp > 5
-  puts "敵はかなり弱っている"
+  puts ""敵はかなり弱っている""
 elsif enemy_hp > 0
-  puts "敵は瀕死だ"
+  puts ""敵は瀕死だ""
 else
-  puts "敵はしんだ"
+  puts ""敵はしんだ""
 end
 
 
@@ -1751,20 +1892,20 @@ brave_damage = enemy_attack - brave_defense
 brave_hp = brave_hp - brave_damage
 
 # 敵に与えるダメージと残りHPの表示
-puts "敵から#{brave_damage}のダメージを受けた。"
-puts "残りHPは#{brave_hp}だ。"
+puts ""敵から#{brave_damage}のダメージを受けた。""
+puts ""残りHPは#{brave_hp}だ。""
 
 # 残りHPによってリアクションを変える
 if brave_hp > 20
-  puts "勇者は元気だ"
+  puts ""勇者は元気だ""
 elsif brave_hp > 10
-  puts "勇者はちょっと弱っている"
+  puts ""勇者はちょっと弱っている""
 elsif brave_hp > 5
-  puts "勇者はかなり弱っている"
+  puts ""勇者はかなり弱っている""
 elsif brave_hp > 0
-  puts "勇者は瀕死だ"
+  puts ""勇者は瀕死だ""
 else
-  puts "勇者は死んだ"
+  puts ""勇者は死んだ""
 end
 ```
 
@@ -1797,15 +1938,15 @@ puts <<~TEXT
 TEXT
 
 if enemy_hp > 20
-  puts "敵は元気だ"
+  puts ""敵は元気だ""
 elsif enemy_hp > 10
-  puts "敵はちょっと弱っている"
+  puts ""敵はちょっと弱っている""
 elsif enemy_hp > 5
-  puts "敵はかなり弱っている"
+  puts ""敵はかなり弱っている""
 elsif enemy_hp > 0
-  puts "敵は瀕死だ"
+  puts ""敵は瀕死だ""
 else
-  puts "敵は死んだ"
+  puts ""敵は死んだ""
 end
 
 brave_damage = enemy_attack - brave_defense
@@ -1819,15 +1960,15 @@ TEXT
 
 # 残りHPによってリアクションを変える
 if brave_hp > 20
-  puts "勇者は元気だ"
+  puts ""勇者は元気だ""
 elsif brave_hp > 10
-  puts "勇者はちょっと弱っている"
+  puts ""勇者はちょっと弱っている""
 elsif brave_hp > 5
-  puts "勇者はかなり弱っている"
+  puts ""勇者はかなり弱っている""
 elsif brave_hp > 0
-  puts "勇者は瀕死だ"
+  puts ""勇者は瀕死だ""
 else
-  puts "勇者はしんだ"
+  puts ""勇者はしんだ""
 end
 ```
 
@@ -1862,15 +2003,15 @@ puts <<~TEXT
 TEXT
 
 if enemy_hp > 20
-  puts "敵は元気だ"
+  puts ""敵は元気だ""
 elsif enemy_hp > 10
-  puts "敵はちょっと弱っている"
+  puts ""敵はちょっと弱っている""
 elsif enemy_hp > 5
-  puts "敵はかなり弱っている"
+  puts ""敵はかなり弱っている""
 elsif enemy_hp > 0
-  puts "敵は瀕死だ"
+  puts ""敵は瀕死だ""
 else
-  puts "敵はしんだ"
+  puts ""敵はしんだ""
 end
 
 # 攻撃にランダム要素を入れる
@@ -1884,15 +2025,15 @@ puts <<~TEXT
 TEXT
 
 if brave_hp > 20
-  puts "勇者は元気だ"
+  puts ""勇者は元気だ""
 elsif brave_hp > 10
-  puts "勇者はちょっと弱っている"
+  puts ""勇者はちょっと弱っている""
 elsif brave_hp > 5
-  puts "勇者はかなり弱っている"
+  puts ""勇者はかなり弱っている""
 elsif brave_hp > 0
-  puts "勇者は瀕死だ"
+  puts ""勇者は瀕死だ""
 else
-  puts "勇者はしんだ"
+  puts ""勇者はしんだ""
 end
 ```
 
@@ -1912,12 +2053,12 @@ enemy_defense = 10
 select_attack = rand(4)
 
 if select_attack == 0
-  puts "かいしんのいちげき"
+  puts ""かいしんのいちげき""
   # randの範囲を20~30と大きな値にする
   enemy_damage = brave_attack - enemy_defense + rand(20..30)
   enemy_hp = enemy_hp - enemy_damage
 else
-  puts "つうじょうこうげき"
+  puts ""つうじょうこうげき""
   enemy_damage = brave_attack - enemy_defense + rand(3..5)
   enemy_hp = enemy_hp - enemy_damage
 end
@@ -1928,15 +2069,15 @@ puts <<~TEXT
 TEXT
 
 if enemy_hp > 20
-  puts "敵は元気だ"
+  puts ""敵は元気だ""
 elsif enemy_hp > 10
-  puts "敵はちょっと弱っている"
+  puts ""敵はちょっと弱っている""
 elsif enemy_hp > 5
-  puts "敵はかなり弱っている"
+  puts ""敵はかなり弱っている""
 elsif enemy_hp > 0
-  puts "敵は瀕死だ"
+  puts ""敵は瀕死だ""
 else
-  puts "敵はしんだ"
+  puts ""敵はしんだ""
 end
 
 # 攻撃にランダム要素を入れる
@@ -1944,12 +2085,12 @@ end
 select_attack = rand(4)
 
 if select_attack == 0
-  puts "かいしんのいちげき"
+  puts ""かいしんのいちげき""
   # randの範囲を20~30と大きな値にする
   brave_damage = enemy_attack - brave_defense + rand(10..20)
   brave_hp = brave_hp - brave_damage
 else
-  puts "つうじょうこうげき"
+  puts ""つうじょうこうげき""
   brave_damage = enemy_attack - brave_defense + rand(3..5)
   brave_hp = brave_hp - brave_damage
 end
@@ -1960,15 +2101,15 @@ puts <<~TEXT
 TEXT
 
 if brave_hp > 20
-  puts "勇者は元気だ"
+  puts ""勇者は元気だ""
 elsif brave_hp > 10
-  puts "勇者はちょっと弱っている"
+  puts ""勇者はちょっと弱っている""
 elsif brave_hp > 5
-  puts "勇者はかなり弱っている"
+  puts ""勇者はかなり弱っている""
 elsif brave_hp > 0
-  puts "勇者は瀕死だ"
+  puts ""勇者は瀕死だ""
 else
-  puts "勇者はしんだ"
+  puts ""勇者はしんだ""
 end
 ```
 
@@ -1977,8 +2118,409 @@ end
 # まとめ
 `if`が使えるようになると、行える処理もかなり柔軟になります。現場でもよく使用するので、`if`を使って無駄なく柔軟にプログラムを書く練習をなんどもやってみてください。
 
-お疲れ様でした！
-Ruby on Rails,Ruby on Rails の環境構築,Ruby on Railsとは、Rubyを利用して効率よくWebサイトを開発できるようにしてくれるものです。このRailsのように、Webアプリケーションの開発効率をあげてくれるものを「フレームワーク」と言います。今回の学習ではRailsを使用することはありませんが、将来、Webアプリケーションを開発する上で必要になるものなので、ついでに環境構築していきましょう。
+お疲れ様でした！"
+Ruby,メソッド,"メソッドとは一言で言うと「処理のかたまり」です。
+
+例えば、「選んだ商品と購入する数によって合計金額を計算する」とか「入力したIDとパスワードを判定してログインできるかどうかを判定する」などの一連の処理をまとめ、プログラムの中でいつでもどこでも簡単に必要な処理を呼び出せるようにしたものです。
+
+とはいっても、実際にメソッドを利用してみないとイメージがわかないので、さっそくメソッドを定義してみましょう。
+
+# メソッドの定義と使い方
+メソッドの定義は以下のようになります。
+
+```ruby
+def メソッド名
+
+end
+```
+
+「メソッド名」の部分には、任意の名前をつけてあげます。
+
+大体の場合は、「どう言う処理を行うメソッドか？」と言うことがわかりやすいように、動詞で名前をつけてあげます。
+
+それでは、「選んだ商品と購入する数によって合計金額を計算するメソッド」を定義していきましょう。
+
+まず、メソッド名は以下のようにします。
+
+```ruby
+# 合計金額を表示するメソッド
+def disp_sum
+
+end
+```
+
+以上で `disp_sum` という名前のメソッドが定義できました。
+
+それでは、 `disp_sum` の中に具体的な処理を書いていきましょう。
+
+```ruby
+def disp_sum
+
+  # 商品の値段(price)と個数(num)
+  price = 1980
+  num = 20
+
+  # 商品の合計購入金額を計算
+  price * num
+
+end
+```
+
+メソッドの定義が終わったら、さっそくメソッドを呼び出してみましょう。
+
+呼び出す際は以下のように記述します。
+
+```ruby
+def disp_sum
+
+  price = 1980
+  num = 20
+
+  price * num
+
+end
+
+puts disp_sum
+```
+
+実行結果
+
+```
+39600
+```
+
+これではちょっと味気ないので、式展開を使って意味がわかりやすいような表示にしてみましょう。
+
+```ruby
+def disp_sum
+
+  price = 1980
+  num = 20
+
+  ""#{price}円の商品を#{num}個買ったので、合計金額は#{price * num}です""
+
+end
+
+puts disp_sum
+```
+
+実行結果
+
+```
+1980円の商品を20個買ったので、合計金額は39600です
+```
+
+Rubyにおいて、メソッドは最後に評価した値を呼び出し元に戻します。
+
+先ほどのコードにおいて呼び出し元とは `puts disp_sum` の部分です。
+
+この部分に、メソッドの最後に実行された `price * num` の値が返ってきます。
+
+そのため、 `price * num` の計算結果である `39600` という値が返ってきたわけです。
+
+ちなみに、以下のようにメソッドの中に `return` を加えても同じように処理ができます。
+
+
+```ruby
+def disp_sum
+
+  price = 1980
+  num = 20
+
+  # return を記述
+  return ""#{price}円の商品を#{num}個買ったので、合計金額は#{price * num}です""
+
+end
+
+puts disp_sum
+```
+
+実行結果
+
+```
+1980円の商品を20個買ったので、合計金額は39600です
+```
+
+このようにメソッドの中では `return` を記述しても `price * num` の実行結果を呼び出し元である `puts disp_sum` の部分に返すことができます。
+
+また、他の言語でも同様にメソッドの中では戻り値を返すためによく `return` を使用します。
+
+しかし、Rubyのメソッドでは、先ほども説明したように最後に評価した値を呼び出し元に返してくれます。
+
+そのため、ほとんどの場合メソッドの中には `return` を記述しません。
+
+`return` を使うのは、メソッドの途中で処理を抜けたいときです。
+
+例えば、以下の場合をみてみましょう。
+
+```ruby
+def disp_sum
+
+  price = 1980
+  num = -1
+
+  # return を記述
+  return ""商品の購入数は0以上にしてください"" if num <= 0
+
+  ""#{price}円の商品を#{num}個買ったので、合計金額は#{price * num}です""
+
+end
+
+puts disp_sum
+```
+
+実行結果
+
+```
+商品の購入数は0以上にしてください
+```
+
+このように、メソッドの途中で処理を抜けたい場合に `if` などの条件分岐と合わせて使用することがよくあります。
+
+この使い方を覚えておくと、現場でも役に立つことがありますよ。
+
+# メソッドの引数
+メソッドには「引数」という処理の材料を渡すことができます。
+
+この引数を使用することにより、より柔軟な処理ができるようになります。
+
+では、以下のコードを例に説明していきましょう。
+
+```ruby
+def disp_sum
+
+  price = 1980
+  num = 20
+
+  return ""商品の購入数は0以上にしてください"" if num <= 0
+
+  ""#{price}円の商品を#{num}個買ったので、合計金額は#{price * num}です""
+
+end
+
+puts disp_sum
+```
+
+上のコードでは、何度実行しても `price` の値は `1980` で、 `num` の値は `20` の計算しかできません。これでは、全く柔軟性のないメソッドになってしまいますね。
+
+しかし、このメソッドに引数を使えば、とても柔軟に値の計算ができるようになります。
+
+それではさっそく、引数を使ったメソッドを定義していきましょう。
+
+```ruby
+# ()の中のprice, numが引数を受け取る変数
+def disp_sum(price, num)
+
+  return ""商品の購入数は0以上にしてください"" if num <= 0
+
+  ""#{price}円の商品を#{num}個買ったので、合計金額は#{price * num}です""
+
+end
+
+# ()の中の値がdisp_sumの引数：左からprice, numの順番となる
+puts disp_sum(1980, 20)
+puts disp_sum(2480, 20)
+puts disp_sum(72980, 20)
+```
+
+実行結果
+
+```
+1980円の商品を20個買ったので、合計金額は39600です
+2480円の商品を20個買ったので、合計金額は49600です
+72980円の商品を20個買ったので、合計金額は1459600です
+```
+
+これでかなり柔軟に計算ができるようになりましたね。
+
+`disp_sum(1980, 20)` や `puts disp_sum(2480, 20)` のように、引数に渡してあげる値を変えれば、それに応じて柔軟に計算結果を変えることができます。
+
+また、試しに `num` の部分に入る数を `-1` にしてみましょう。
+
+```ruby
+def disp_sum(price, num)
+
+  return ""商品の購入数は0以上にしてください"" if num <= 0
+
+  ""#{price}円の商品を#{num}個買ったので、合計金額は#{price * num}です""
+
+end
+
+# 引数を-1にする
+puts disp_sum(1980, -1)
+```
+
+実行結果
+
+```
+商品の購入数は0以上にしてください
+```
+
+`num` の引数を `-1` にすると、きちんと注意文が表示されました。
+
+この注意文に関しても、入力した値が表示されるようにちょっと改善しましょう。
+
+```ruby
+def disp_sum(price, num)
+
+  return ""商品の購入数は0以上にしてください：入力値 #{num}"" if num <= 0
+
+  ""#{price}円の商品を#{num}個買ったので、合計金額は#{price * num}です""
+
+end
+
+# 引数を-1にする
+puts disp_sum(1980, -1)
+```
+
+実行結果
+
+```
+商品の購入数は0以上にしてください：入力値 -1
+```
+
+このように、引数を使用するとだいぶ処理の柔軟性が出てきます。
+
+# デフォルト値付きの引数
+先ほど引数付きのメソッドを定義する方法を学びました。
+
+しかし、メソッドに引数を設定した場合、呼び出し元で引数を渡してあげないとエラーが出ます。
+
+```ruby
+def disp_sum(price, num)
+
+  return ""商品の購入数は0以上にしてください：入力値 #{num}"" if num <= 0
+
+  ""#{price}円の商品を#{num}個買ったので、合計金額は#{price * num}です""
+
+end
+
+# 引数を無しにしてメソッドを呼び出し
+puts disp_sum()
+```
+
+実行結果
+
+```
+ArgumentError (wrong number of arguments (given 0, expected 2))
+```
+
+これだと、引数に渡すデータが存在しない場合にはプログラムが途中で止まってしまいます。
+
+しかし、Rubyのメソッドにはこのようなエラーを防ぐための仕組みがあります。
+
+それが、引数のデフォルト値の設定です。
+
+引数にデフォルト値を設定すると、「引数が存在する場合は引数を元に処理を行い、引数がない場合はデフォルト値を使って処理を行う」といった処理が可能になります。
+
+引数に対するデフォルト値は以下のように設定することができます。
+
+```ruby
+# 引数にデフォルト値を設定
+def disp_sum(price = 1980, num = 20)
+
+  return ""商品の購入数は0以上にしてください：入力値 #{num}"" if num <= 0
+
+  ""#{price}円の商品を#{num}個買ったので、合計金額は#{price * num}です""
+
+end
+# 引数を無しにしてメソッドを呼び出し
+puts disp_sum()
+```
+
+実行結果
+
+```
+1980円の商品を20個買ったので、合計金額は39600です
+```
+
+このように、引数にデフォルト値を設定すると、呼び出し元で引数を渡さなかったとしてもエラーが表示されなくなります。
+
+こちらも現場ではよく使う書き方なのでぜひ、使えるようにしておいてください。
+
+
+# まとめ
+メソッドは、効率よく複雑な処理を実装するためによく利用されます。
+
+このメソッドの中でいかに効率の良い処理をかけるかどうかがプログラマーの腕の見せ所です。
+
+メソッドの定義や使い方をしっかりと覚え、かつ、ほかの文法とどうやって組み合わせるかを常に考える癖をつけてみてください。
+
+そうすることで、シンプルで効率の良い処理を素早く実装できるプログラマーになることができます。"
+Ruby on Rails,Ruby on Rails の基本,"こちらでは、コードを書くのではなくRuby on Railsがどういうものなのかを説明することに焦点を当てます。今後、Ruby on Railsのスキルを身につける上で、基本的な仕組みを知っておくことは超重要。基礎の基礎が大事ということをよく頭に入れながら学んでいきましょう。
+
+# MVC
+Ruby on Railsは、MVCアーキテクチャにのっとって設計されています。そのため、MVCアーキテクチャを理解しておくことがとても重要になって来るのです。ちなみに、MVCのそれぞれの意味はM（モデル）、V（ビュー）、C（コントローラー）となります。そして、これらの要素はRuby on Railsにおいて明確に役割が決まっています。
+
+|名前|役割|
+|---|---|
+|M(モデル)|データベースのデータを扱う、複雑なロジックを組む|
+|V(ビュー)|Webサイトの画面を構成|
+|C(コントローラー)|処理の振り分け|
+
+# Ruby on Railsの構成要素
+Ruby on Railsには、様々な構成要素があります。そのなかでも、まずは基本となる以下の構成要素を覚えておきましょう。
+
+1. Active Record（モデル）
+2. Action View（ビュー）
+3. Action Controller（コントローラー）
+
+# Ruby on Railsの便利な機能
+Ruby on Railsがなぜ便利なのか？その秘密がこちらです。
+
+## ルーティング
+&や=、拡張子の入った汚いURLではなく、`/user/1`などの綺麗でなんのデータを見ているのかわかりやすいURLを使用することができます。
+
+## テンプレート
+Ruby on Railsでは、Webサイトのナビゲーションバーなどを全体で共有したり、HTMLの中に直接Rubyのコードを埋め込んだりすることができます。これにより、同じコードをなんども書く手間が省けたり、柔軟に画面の表示を変えることが可能になるわけです。
+
+## マイグレーション
+マイグレーションとはデータベースのテーブルを定義するための機能で、この機能によりデータベースを操作するための言語であるSQLを直接書かなくても自由にテーブルを作成できるようになります
+
+## レコードの操作
+データベースに保存されているデータのかたまり（レコード）を簡単に操作することができます。これにより、データの一覧表示、登録、更新、削除といったデータを扱うための操作（CRUD処理）が実現しやすくなっています。
+
+## バリデーション
+データベースのテーブルにデータを保存するときに、データのチェックを行うことができます。例えば、数字になっているか？空のデータになっていないか？データが長すぎないか？といったチェックを簡単に行えるようになるわけです。
+
+## 国際化
+様々な言語に対応したWebサイトを構築することができます。
+
+## テスト
+Webサイトの品質を保つのに重要なテストが簡単に実装できます。
+
+## セッション
+複数ページにまたがって、同一ユーザーのデータを保持する（例：アマゾンのショッピングカート）といった機能が簡単に実現できます。
+
+## モデル間の関連付け
+複数のモデル間で連携し、データの検索を行う際にいちどに複数のテーブルのデータを取り出すことが可能になります。例えば、あるユーザーの購入した商品一覧を表示するときにも、この関連付けが役に立ちます。
+
+# HTTP
+ HTTPは、ブラウザとサーバーがHTML、画像などの情報をやり取りするときに使われる通信手段（プロトコル）です。Webサイトを作成する際にも、この点を理解しながら進めていきましょう。
+
+## リクエストとレスポンス
+Webサイトではリクエストとレスポンスによって情報の送受信が行われています。リクエストは、ユーザーがブラウザから要求するもので、レスポンスはユーザーの要求に応じて必要なデータを返すことです。このやりとりによって、Webサイトはユーザーに必要な情報を届けることができています。
+
+|名前|意味|
+|---|---|
+|リクエスト|ユーザーがサーバーに対してデータを要求すること|
+|レスポンス|ユーザーのリクエストに応じた情報をサーバーが返すこと|
+
+# Ruby on Railsのリクエストの流れ
+Webアプリケーションを作成するにあたって、リクエストの流れを理解することは超重要です。今後の学習をスムーズに進めるためにも、この流れをよく理解しておきましょう。Ruby on Railsにおいて、ユーザーからのリクエストは以下の流れで処理されます。
+
+1. ルート
+2. コントローラ
+3. ビュー
+
+Ruby on Railsはブラウザからのリクエストを受け取ると、`config`ディレクトリの中にある`routes.rb`の記述に従ってどのコントローラのどのアクションに処理を渡すかを決めます。
+
+コントローラは複数あり、そのコントローラの中に複数のアクションがあります。そして、アクションにはモデルとどのようなやり取りをするのかを記述します。また、モデルから取り出したデータはインスタンス変数に保存し、その情報をビューに渡します。アクションは、ブラウザへのレスポンスを作成するために、表示するビューを選択します。特に指定がない場合は、アクションと同じ名前のビューが選択されて、ブラウザに表示されます。
+
+このコントローラによって、モデルからデータを受け取ったり、次にどのビューを表示させるかを決めたりすることができるわけです。
+
+コントローラによって選ばれたビュー（テンプレートともいう）は、コントローラのインスタンス変数を参照して、その値をHTMLの中で使用することができます。それにより、ユーザーが要求したデータを柔軟に表示させることができるわけです。"
+Ruby on Rails,Ruby on Rails の環境構築,"Ruby on Railsとは、Rubyを利用して効率よくWebサイトを開発できるようにしてくれるものです。このRailsのように、Webアプリケーションの開発効率をあげてくれるものを「フレームワーク」と言います。今回の学習ではRailsを使用することはありませんが、将来、Webアプリケーションを開発する上で必要になるものなので、ついでに環境構築していきましょう。
 
 ## インストールの流れ
 環境構築は以下の手順で行います。
@@ -2014,7 +2556,7 @@ Ruby on Rails,Ruby on Rails の環境構築,Ruby on Railsとは、Rubyを利用�
 Homebrewのインストールをします。ここからはターミナルでコマンドを入力していきましょう。ターミナルの場所は「アプリケーション＞ユーティリティ＞ターミナル」となります。ターミナルを開いたら、以下のコマンドを入力しましょう。
 
 ```
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ ruby -e ""$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)""
 ```
 
 途中で`enter`を求められるので`enterキー`を押し、その後、Macのパスワードを入力しましょう。インストールが終了すると、ターミナルからコマンド入力できる状態に戻ります。その後、homebrewがきちんとインストールできたか確かめるため、以下のコマンドを入力します。こちらは、Homebrewのバージョンを確認するコマンドです。
@@ -2061,7 +2603,7 @@ $ brew install rbenv ruby-build
 インストールが完了したら、rbenvのパスを通します。
 
 ```
-$ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+$ echo 'eval ""$(rbenv init -)""' >> ~/.bash_profile
 ```
 
 bash_profileの変更内容を読み込む
@@ -2083,11 +2625,11 @@ readlineはCUIでの操作を簡単にするためのツールです。こちら
 ```
 $ pry
 [1] pry(main)> 'ぷらい'
-=> "ぷらい"
+=> ""ぷらい""
 
 $ irb
 irb(main):001:0> 'あいあーるびー'
-=> "あいあーるびー"
+=> ""あいあーるびー""
 ```
 
 それではさっそく、`readline`をインストールしましょう。
@@ -2113,7 +2655,7 @@ $ brew link readline --force
 rbenvを利用して`Ruby`のインストールを行います。
 
 ```
-$ RUBY_CONFIGURE_OPTS="--with-readline-dir=$(brew --prefix readline)"
+$ RUBY_CONFIGURE_OPTS=""--with-readline-dir=$(brew --prefix readline)""
 ```
 
 ```
@@ -2162,8 +2704,8 @@ $ rbenv rehash
 
 ```
 $ rails -v
-```
-Ruby on Rails,Ruby on Rails で Hello World!!,こちらでは、Railsを使って「Hello World」を表示する簡単なWebアプリケーションを作っていきましょう。
+```"
+Ruby on Rails,Ruby on Rails で Hello World!!,"こちらでは、Railsを使って「Hello World」を表示する簡単なWebアプリケーションを作っていきましょう。
 
 # Webアプリケーションとは
 WEBアプリケーションとは、ブラウザから利用可能な動的なWebサービスのことを指します。
@@ -2471,7 +3013,7 @@ rails s
 ```rb
 class HomesController < ApplicationController
   def index
-    @greet = "Hello World!!"
+    @greet = ""Hello World!!""
   end
 end
 ```
@@ -2492,12 +3034,12 @@ end
 ```rb
 class User
   def initialize
-    @first_name = "Yoshito"
-    @last_name = "Kamizato"
-    @birthday = "1987/4/10"
+    @first_name = ""Yoshito""
+    @last_name = ""Kamizato""
+    @birthday = ""1987/4/10""
     @age = 32
-    @birthplace = "Okinawa/Nago"
-    @hobby = "Video Game"
+    @birthplace = ""Okinawa/Nago""
+    @hobby = ""Video Game""
   end
 
   def introduce
@@ -2517,7 +3059,7 @@ end
 ```rb
 class HomesController < ApplicationController
   def index
-    @greet = "Hello World!!"
+    @greet = ""Hello World!!""
 
     # Userモデルをインスタンス化
     user = User.new
@@ -2623,8 +3165,8 @@ Hello World!!
 
 試しに、`index.html.erb`とは別に、`new.html.erb`を作成し、そのビューファイルが表示されるようにルート・コントローラ・ビューを編集して見ましょう。それに挑戦してみると、より理解が深まるかと思います。
 
-今回はこれで以上です、お疲れ様でした！
-Ruby on Rails,Ruby on Rails アプリのデプロイ,こちらでは、Railsで作成したWebアプリをHerokuにデプロイする手順をご説明いたします。
+今回はこれで以上です、お疲れ様でした！"
+Ruby on Rails,Ruby on Rails アプリのデプロイ,"こちらでは、Railsで作成したWebアプリをHerokuにデプロイする手順をご説明いたします。
 
 # Herokuに登録
 まずは、Herokuにアカウントを作りましょう。
@@ -2679,7 +3221,7 @@ git add .
 ```
 
 ```
-git commit -m "commit message"
+git commit -m ""commit message""
 ```
 
 gitを使用してherokuにアプリをプッシュします。
@@ -2708,13 +3250,13 @@ git add .
 ```
 
 ```
-git commit -m "commit message"
+git commit -m ""commit message""
 ```
 
 ```
 git push heroku master
-```
-Ruby on Rails,CRUD処理の実装,REST（Representational State Transfer）とは「ネットワーク上に置かれたリソース（データ）に対して表示、作成、更新、削除などの操作を行う」というアプリケーション作成における考え方です。
+```"
+Ruby on Rails,CRUD処理の実装,"REST（Representational State Transfer）とは「ネットワーク上に置かれたリソース（データ）に対して表示、作成、更新、削除などの操作を行う」というアプリケーション作成における考え方です。
 
 こちらは、Ruby on RailsでデータのCRUD処理（新規登録、一覧表示、更新、削除）を実装するにあたり、最初のうちから理解しておいた方がいいです。
 ただ、一度に理解するのは難しいので、折をみて何度も繰り返し復習してみてください。
@@ -2820,7 +3362,7 @@ end
 こちらが、投稿画面のフォームになります。
 
 ```
-<%= form_for @user, url: "/users" , html: { method: :post } do |f| %>
+<%= form_for @user, url: ""/users"" , html: { method: :post } do |f| %>
   <p>投稿する</p>
   <p>お名前：<%= f.text_field :name %></p>
   <p>年齢：<%= f.text_field :age %></p>
@@ -2848,7 +3390,7 @@ Ruby on Railsには、基本的なフォームとして以下の2つがよく利
 今回はわかりやすいように、URLの部分を以下のように記載しました。
 
 ```
-<%= form_for @user, url: "/users" , html: { method: :post } do |f| %>
+<%= form_for @user, url: ""/users"" , html: { method: :post } do |f| %>
 ```
 
 しかし、実際は以下のように記述することもできるのです。
@@ -2989,7 +3531,7 @@ end
 
 ```
 <h1>登録完了</h1>
-<%= link_to "一覧画面へ", "/users" %>
+<%= link_to ""一覧画面へ"", ""/users"" %>
 ```
 
 ここまできたら、データベースにデータが登録できたか確認してみてください。
@@ -3049,7 +3591,7 @@ end
 これで、ユーザーデータが一覧表示できるようになります。
 
 ```
-<%= link_to "投稿画面へ", "/users/new" %>
+<%= link_to ""投稿画面へ"", ""/users/new"" %>
 <% @users.each do |user| %>
   <p>
     <%= user.name %>
@@ -3073,7 +3615,7 @@ end
   <p>
     <%= user.name %>
     <%= user.age %>
-    <%= link_to '削除', "/users/#{user.id}", method: :delete, data: {confirm: "削除しますか?"}  %>
+    <%= link_to '削除', ""/users/#{user.id}"", method: :delete, data: {confirm: ""削除しますか?""}  %>
   </p>
 <% end %>
 ```
@@ -3145,7 +3687,7 @@ end
 
 ```
 <h1>削除完了</h1>
-<%= link_to "一覧画面へ", "/users" %>
+<%= link_to ""一覧画面へ"", ""/users"" %>
 ```
 
 以上で削除機能の実装は完了です。
@@ -3160,12 +3702,12 @@ end
  `views/users` ディレクトリにある `index.html.erb` に以下のコードを追記しましょう。
 
 ```
-<%= link_to "投稿画面へ", "/users/new" %>
+<%= link_to ""投稿画面へ"", ""/users/new"" %>
 <% @users.each do |user| %>
   <p>
     <%= user.name %><%= user.age %>
-    <%= link_to '削除', "/users/#{user.id}", method: :delete, data: {confirm: "削除しますか?"}  %>
-    <%= link_to '編集', "/users/#{user.id}/edit", method: :get %> 
+    <%= link_to '削除', ""/users/#{user.id}"", method: :delete, data: {confirm: ""削除しますか?""}  %>
+    <%= link_to '編集', ""/users/#{user.id}/edit"", method: :get %> 
   </p>
 <% end %>
 ```
@@ -3222,11 +3764,11 @@ end
 `edit` アクションが追加できたら、 `views/users` ディレクトリに `edit.html.erb` を作成し、以下のコードを記述しましょう。
 
 ```
-<%= form_for @user, url: "/users/#{@user.id}", html: { method: :patch } do |f| %>
+<%= form_for @user, url: ""/users/#{@user.id}"", html: { method: :patch } do |f| %>
   <p>更新</p>
   <p><%= f.text_field :name %></p>
   <p><%= f.text_field :age %></p>
-  <input type="submit" value="送信">
+  <input type=""submit"" value=""送信"">
 <% end %>
 ```
 
@@ -3289,7 +3831,7 @@ end
 
 ```
 <h1>更新完了</h1>
-<%= link_to "一覧画面へ", "/users" %>
+<%= link_to ""一覧画面へ"", ""/users"" %>
 ```
 
 これで編集機能の実装が完了しました。ユーザーのデータがきちんと更新できるか確認してみましょう。更新が確認できたらCRUD処理の実装は一通り終了です。
@@ -3316,7 +3858,7 @@ class UsersController < ApplicationController
   def create
     User.create(user_params)
     # 以下のメソッドを追加
-    redirect_to :action => "index"
+    redirect_to :action => ""index""
   end
 
   def edit
@@ -3327,14 +3869,14 @@ class UsersController < ApplicationController
     user = User.find(params[:id])
     user.update(user_params)
     # 以下のメソッドを追加
-    redirect_to :action => "index"
+    redirect_to :action => ""index""
   end
 
   def destroy
     user = User.find(params[:id])
     user.delete
     # 以下のメソッドを追加
-    redirect_to :action => "index"
+    redirect_to :action => ""index""
   end
 
   private
@@ -3358,4 +3900,4 @@ end
 
 お疲れ様でした！
 
-[ソースコードを確認する](https://github.com/yoshitokamizato/crud_sample2.git)
+[ソースコードを確認する](https://github.com/yoshitokamizato/crud_sample2.git)"
