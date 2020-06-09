@@ -13,7 +13,7 @@
     <tbody>
       <% @aws_texts.each.with_index(1) do |aws_text,i| %>
         <tr>
-            <td><%= "#{i}" %></td>
+            <td><%= i %></td>
             <td>
               <%= link_to "#{aws_text.title}", aws_text_path(aws_text.id) %>
             </td>
