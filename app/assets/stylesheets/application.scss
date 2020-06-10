@@ -50,14 +50,31 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 .text-right {
   opacity: 0.5;
 }
-.seach-form {
-  padding: 6px,12px,6px,50px;
+
+.container {
+  padding: 50px 0 160px 0;
 }
 
-.text-wrapper{
+input.search-text {
+  padding-left: 46px;
+}
+
+form.seach-form {
+  position: relative;
+  max-width: 350px;
+}
+
+i.search-icon {
+  position: absolute;
+  left: 5%;
+  top: 16px;
+  z-index: 10;
+}
+
+.texts-wrapper{
   text-align: center;
 }
 
-.texts-contents{
-  
+.contents-title {
+  padding: 40px 0 10px 0;
 }

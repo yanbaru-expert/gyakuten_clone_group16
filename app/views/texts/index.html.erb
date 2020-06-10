@@ -1,15 +1,20 @@
-<form class= seach-form>
-   <i class="fas fa-search "></i>
-   <input type="text" class="form-control" placeholder="教材を探す">
-</form>
+<div class="container">
 
-<h2 class="text-wrapper">テキスト教材</h2>
+  <form class="seach-form mx-auto">
+    <i class="fas fa-search search-icon"></i>
+    <input type="text" class="form-control form-control-lg  search-text" placeholder="教材を探す">
+  </form>
 
-<% @texts.each do |text| %>
-  <div class="texts-contents">
-  <%= link_to texts_path(text.id) do %>
-    <h3><%= text.title %></h3> 
-    <p><%= "【#{text.genre}】" %></p>
-  <% end %>
+  <div class="texts-wrapper">
+    <h2 class="contents-title">テキスト教材</h2>
+
+    <% @texts.each do |text| %>
+      <div class="texts-contents">
+      <%= link_to texts_path(text.id) do %>
+        <h3><%= text.title %></h3> 
+        <p><%= "【#{text.genre}】" %></p>
+      <% end %>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>
