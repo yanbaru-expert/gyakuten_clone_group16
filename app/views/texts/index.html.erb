@@ -11,7 +11,8 @@
       <div class="texts-contents">
         <% @texts.each do |text| %>
           <div class="texts-content">
-            <%= link_to texts_path(text.id)  do %>
+            <%= link_to texts_path(text.id) do %>
+              
               <h3><%= text.title %></h3> 
               <p><%= "【#{text.genre}】" %></p>
             <% end %>

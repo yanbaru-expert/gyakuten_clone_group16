@@ -73,6 +73,7 @@ i.search-icon {
 
 .texts-wrapper{
   text-align: center;
+  color: #444444;
 }
 
 .contents-title {
@@ -85,16 +86,37 @@ i.search-icon {
 }
 
 .texts-content {
+  position: relative;
     margin: 0 1%;
     margin-bottom: 50px;
     border: 4px solid #e3e9f1;
     border-radius: 5px;
+    text-align:left;
+    cursor : pointer;
+  a{
+    text-decoration: none;
+    color: #444444;
   }
+  p {
+    position: absolute;
+  }
+}
 
   @media (min-width: 0px) {
   .texts-content {
     width: 90%;
     height: 680px;
+
+    h3 {
+    font-size: 32px;
+    margin-top: 44px;
+    padding: 0 40px;
+    }
+    p {
+      font-size: 28px;
+      bottom: 0;
+      left : 24px;
+    }
   }
  }
 
@@ -102,6 +124,17 @@ i.search-icon {
   .texts-content {
     width: calc(94% / 3);
     height: 320px;
+
+    h3 {
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 0 27px;
+    }
+    p {
+      font-size: 16px;
+      bottom: 0;
+      left : 24px;
+    }
   }
  }
 
@@ -109,6 +142,17 @@ i.search-icon {
   .texts-content {
     width: calc(94% / 3);
     height: 360px;
+
+    h3 {
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 0 27px;
+    }
+    p {
+      font-size: 16px;
+      bottom: 0;
+      left : 24px;
+    }
   }
  }
 
