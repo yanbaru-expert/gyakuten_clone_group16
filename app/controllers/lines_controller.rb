@@ -5,5 +5,6 @@ class LinesController < ApplicationController
   end
 
   def show
+    @lines = Line.find(params[:id])
   end
 end
