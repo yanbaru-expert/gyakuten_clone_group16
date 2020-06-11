@@ -1,6 +1,6 @@
 <div class="container">
 
-  <form class="seach-form mx-auto">
+  <form class="search-form mx-auto">
     <i class="fas fa-search search-icon"></i>
     <input type="text" class="form-control form-control-lg  search-text" placeholder="教材を探す">
   </form>
@@ -8,13 +8,15 @@
   <div class="texts-wrapper">
     <h2 class="contents-title">テキスト教材</h2>
 
-    <% @texts.each do |text| %>
       <div class="texts-contents">
-      <%= link_to texts_path(text.id) do %>
-        <h3><%= text.title %></h3> 
-        <p><%= "【#{text.genre}】" %></p>
-      <% end %>
+        <% @texts.each do |text| %>
+          <div class="texts-content">
+            <%= link_to texts_path(text.id)  do %>
+              <h3><%= text.title %></h3> 
+              <p><%= "【#{text.genre}】" %></p>
+            <% end %>
+          </div>
+        <% end %>
       </div>
-    <% end %>
   </div>
 </div>
