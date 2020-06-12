@@ -65,3 +65,8 @@
   padding: 50px 0 160px 0;
   line-height: 50px;
 }
+
+//フッターにコンテンツが隠れることを避けるための定義
+body {
+  padding-bottom: 70px;
+}
