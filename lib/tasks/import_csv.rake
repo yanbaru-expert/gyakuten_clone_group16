@@ -81,6 +81,21 @@ namespace :import_csv do
    end
   end
 
+  desc "marketing.csvをmarketingにインポートするタスク"
+
+  task marketings: :environment do
+
+    list = Import.csv_data(path: 'db/csv_data/marketing_data.csv')
+
+   puts "インポート処理を開始"
+   begin
+    Marketing.create!(list)
+     puts "インポート完了!!"
+   rescue ActiveModel::UnknownAttributeError => invalid
+     puts "インポートに失敗：UnknownAttributeError"
+   end
+  end
+
   desc "talk_data.csvをtalkにインポートするタスク"
   task talks: :environment do
     
@@ -109,7 +124,39 @@ namespace :import_csv do
     end
   end
 
+  desc "writing_data.csvをwritingにインポートするタスク"
+
+  task writings: :environment do
+    
+    list = Import.csv_data(path: 'db/csv_data/writing_data.csv')
+
+    puts "インポート処理を開始"
+    begin
+      Writing.delete_all
+      Writing.create!(list)
+      puts "インポート完了!!"
+    rescue ActiveModel::UnknownAttributeError => invalid
+      puts "インポートに失敗：UnknownAttributeError"
+    end
+  end
+
+  desc "line_data.csvをlineにインポートするタスク"
+
+  task lines: :environment do
+
+    list = Import.csv_data(path: 'db/csv_data/line_data.csv')
+
+    puts "インポート処理を開始"
+    begin
+      Line.create!(list)
+      puts "インポート完了!!"
+    rescue ActiveModel::UnknownAttributeError => invalid
+      puts "インポートに失敗：UnknownAttributeError"
+    end
+  end
+
   desc "text_data.csvをtextにインポートするタスク"
+  
   task texts: :environment do
     
     list = Import.csv_data(path: 'db/csv_data/text_data.csv')

@@ -51,6 +51,32 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   opacity: 0.5;
 }
 
+.line-text-color {
+  color: #35a719 ;
+}
+
+.line-table-container {
+  margin: 0 auto;
+  width: 710px;
+}
+
+.line-table-head {
+  background-color: #35a719 ;
+}
+
+.line-container {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 50px 0 160px 0;
+  line-height: 50px;
+}
+
+//フッターにコンテンツが隠れることを避けるための定義
+body {
+  padding-bottom: 70px;
+}
+
 .container {
   padding: 50px 0 160px 0;
 }
@@ -160,3 +186,4 @@ i.search-icon {
 .texts-content:hover {
   border: 2px solid #c0cfe2;
 }
+
