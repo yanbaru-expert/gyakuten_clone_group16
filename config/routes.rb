@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :writings, only: [:index]
   resources :lines, only: [:index, :show]
   resources :movie_edit_courses, only: [:index]
+  resources :texts, only: [:index]
   resources :questions, only: [:index, :create, :show] do
     resource :solutions, only: :create
   end

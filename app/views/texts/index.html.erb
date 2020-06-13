@@ -1,0 +1,23 @@
+<div class="container">
+
+  <form class="search-form mx-auto">
+    <i class="fas fa-search search-icon"></i>
+    <input type="text" class="form-control form-control-lg  search-text" placeholder="教材を探す">
+  </form>
+
+  <div class="texts-wrapper">
+    <h2 class="contents-title">テキスト教材</h2>
+
+      <div class="texts-contents">
+        <% @texts.each do |text| %>
+          <div class="texts-content">
+            <%= link_to texts_path(text.id) do %>
+              <%= image_tag '/no_image.jpeg' %>
+              <h3><%= text.title %></h3> 
+              <p><%= "【#{text.genre}】" %></p>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+  </div>
+</div>

@@ -1,5 +1,11 @@
 @import "bootstrap/scss/bootstrap";
 
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/brands";
+
 .container-login {
     @extend .container-fluid;
     max-width: 576px;
@@ -70,3 +76,129 @@
 body {
   padding-bottom: 70px;
 }
+
+.container {
+  padding: 50px 0 160px 0;
+}
+
+input.search-text {
+  padding-left: 46px;
+}
+
+form.search-form {
+  position: relative;
+  max-width: 350px;
+}
+
+i.search-icon {
+  position: absolute;
+  left: 5%;
+  top: 16px;
+  z-index: 10;
+}
+
+.texts-wrapper{
+  text-align: center;
+  color: #444444;
+}
+
+.contents-title {
+  padding: 40px 0 10px 0;
+}
+
+.texts-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.texts-content {
+  position: relative;
+    margin: 0 1%;
+    margin-bottom: 50px;
+    border: 4px solid #e3e9f1;
+    border-radius: 5px;
+    text-align:left;
+    cursor : pointer;
+    background-color: #f7f7f7;
+  a{
+    text-decoration: none;
+    color: #444444;
+  }
+  p {
+    position: absolute;
+  }
+  img {
+    border-radius: 3px 3px 0 0 ;
+  }
+}
+
+  @media (min-width: 0px) {
+  .texts-content {
+    width: 90%;
+    height: 680px;
+
+    h3 {
+    font-size: 32px;
+    margin-top: 44px;
+    padding: 0 40px;
+    }
+    p {
+      font-size: 28px;
+      bottom: 0;
+      left : 24px;
+    }
+    img {
+    max-height: 394px;
+    width: 100%;
+  }
+  }
+ }
+
+ @media (min-width: 992px) {
+  .texts-content {
+    width: calc(94% / 3);
+    height: 320px;
+
+    h3 {
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 0 27px;
+    }
+    p {
+      font-size: 16px;
+      bottom: 0;
+      left : 24px;
+    }
+    img {
+    height: 154px;
+    width: 100%;
+  }
+  }
+ }
+
+ @media (min-width: 1200px) {
+  .texts-content {
+    width: calc(94% / 3);
+    height: 360px;
+
+    h3 {
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 0 27px;
+    }
+    p {
+      font-size: 16px;
+      bottom: 0;
+      left : 24px;
+    }
+    img {
+    height: 187px;
+    width: 100%;
+  }
+  }
+ }
+
+.texts-content:hover {
+  border: 2px solid #c0cfe2;
+}
+
