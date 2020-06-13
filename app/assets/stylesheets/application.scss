@@ -127,6 +127,9 @@ i.search-icon {
   p {
     position: absolute;
   }
+  img {
+    border-radius: 3px 3px 0 0 ;
+  }
 }
 
   @media (min-width: 0px) {
@@ -144,6 +147,10 @@ i.search-icon {
       bottom: 0;
       left : 24px;
     }
+    img {
+    max-height: 394px;
+    width: 100%;
+  }
   }
  }
 
@@ -162,6 +169,10 @@ i.search-icon {
       bottom: 0;
       left : 24px;
     }
+    img {
+    height: 154px;
+    width: 100%;
+  }
   }
  }
 
@@ -180,6 +191,10 @@ i.search-icon {
       bottom: 0;
       left : 24px;
     }
+    img {
+    height: 187px;
+    width: 100%;
+  }
   }
  }
 
