@@ -202,3 +202,43 @@ i.search-icon {
   border: 2px solid #c0cfe2;
 }
 
+.texts-content-show {
+  text-align: left;
+  p {
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 0px) {
+  .texts-content-show {
+    margin: 0 auto;
+    font-size: 2em;
+
+    h2, h1 {
+      padding: 50px 0 10px 0;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .texts-content-show {
+    width: 710px;
+    margin: 0 auto;
+    font-size: 17px;
+
+    h2, h1 {
+      padding: 20px 0 10px 0;
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+}
+.link-icon {
+  display: flex;
+  flex-direction: column;
+}
+  .fa-twitter{color: #1da1f2;}
+  .fa-facebook-square{color:#3b5998;}
+  .heart_large {font-size: 1.2em;}
