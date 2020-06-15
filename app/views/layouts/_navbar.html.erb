@@ -1,61 +1,54 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="/">GyakutenCloneGroup</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <a class="navbar-brand" href="/">GyakutenCloneGroup</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <li class="nav-item dropdown active">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Rails
-      </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <%= link_to "動画教材", root_path, class:"dropdown-item" %>
-      <a class="dropdown-item" href="/texts">テキスト教材</a>
-      <a class="dropdown-item" href="/live_codings">ライブコーディング</a>
-      <a class="dropdown-item" href="/questions">質問集</a>
-    </div>
-    </li>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Rails
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <%= link_to "動画教材", root_path, class:"dropdown-item" %>
+            <a class="dropdown-item" href="/texts">テキスト教材</a>
+            <a class="dropdown-item" href="/live_codings">ライブコーディング</a>
+            <a class="dropdown-item" href="/questions">質問集</a>
+        </div>
+      </li>
       <li class="nav-item active">
         <a class="nav-link" href="/aws_texts">AWSテキスト教材</a>
       </li>
-
       <li class="nav-item active">
         <a class="nav-link" href="/php_lectures">PHP講座</a>
       </li>
-
       <li class="nav-item active">
         <a class="nav-link" href="/talks">対談</a>
       </li>
-
       <li class="nav-item active">
         <a class="nav-link" href="/marketings">情報発信</a>
       </li>
-
       <li class="nav-item active">
         <a class="nav-link" href="/movie_edit_courses">動画編集講座</a>
       </li>
-
       <li class="nav-item active">
         <a class="nav-link" href="/writings">ライティング講座</a>
       </li>
-
       <li class="nav-item active">
         <a class="nav-link" href="/lines">LINE@</a>
       </li>
-
-    <% if user_signed_in? %>
-      <li class="nav-item active">
-    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'nav-link' %>
-      </li>
-    <% else %>
-      <li class="nav-item active">
-    <%= link_to "新規登録", new_user_registration_path, class: 'nav-link' %>
-      </li>
-    <li class="nav-item active">
-      <%= link_to "ログイン", new_user_session_path, class: 'nav-link' %>
-      </li>
+      <% if user_signed_in? %>
+        <li class="nav-item active">
+          <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+        </li>
+      <% else %>
+        <li class="nav-item active">
+          <%= link_to "新規登録", new_user_registration_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to "ログイン", new_user_session_path, class: 'nav-link' %>
+        </li>
       <% end %>
     </ul>
   </div>
