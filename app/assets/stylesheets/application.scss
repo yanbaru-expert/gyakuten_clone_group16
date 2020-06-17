@@ -204,14 +204,7 @@ i.search-icon {
 
 .texts-content-show {
   text-align: left;
-  p {
-    margin-bottom: 16px;
-  }
-}
-
-@media (min-width: 0px) {
-  .texts-content-show {
-    margin: 0 auto;
+  margin: 0 auto;
     font-size: 2em;
 
     h2, h1 {
@@ -219,6 +212,8 @@ i.search-icon {
       font-weight: bold;
       font-size: 1.5em;
     }
+  p {
+    margin-bottom: 16px;
   }
 }
 
