@@ -72,6 +72,14 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   line-height: 50px;
 }
 
+.navbar-bg {
+  background-color: #5D99FF;
+}
+
+.navbar-line-bg {
+  background-color: #35a719;
+}
+
 //フッターにコンテンツが隠れることを避けるための定義
 body {
   padding-bottom: 70px;
