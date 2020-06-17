@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="texts-content-show">
+    <section id="text-contents">
+      <h2><%= @text.title %></h2>
+      <%= markdown(@text.content).html_safe %>
+      <div class="link-icon">
+        <%= link_to("https://twitter.com/share") do %>
+          <span class="fab fa-twitter-square heart_large"></span>
+        <% end %>
+        <%= link_to("https://www.facebook.com/sharer") do %>
+          <span class="fab fa-facebook-square heart_large"></span>
+        <% end %>
+      </div>
+    </section>
+  </div>
+</div>
