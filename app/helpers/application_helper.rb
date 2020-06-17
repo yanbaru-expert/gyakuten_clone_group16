@@ -46,3 +46,11 @@ module ApplicationHelper
         markdown.render(text)
     end
 end
+
+def line_color
+  if controller.controller_name == "lines"
+    "navbar-line-bg"
+  else
+    "navbar-bg"
+  end
+end
