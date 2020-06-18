@@ -17,8 +17,8 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
     width: 710px;
   }
 
-.aws-table-head {
-    background-color: #007bff;
+.main-bg-color {
+    background-color: #5D99FF;
   }
 
 .aws-text-content {
@@ -55,12 +55,8 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   color: #35a719 ;
 }
 
-.line-table-container {
-  margin: 0 auto;
-  width: 710px;
-}
 
-.line-table-head {
+.line-bg-color {
   background-color: #35a719 ;
 }
 
@@ -72,13 +68,6 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   line-height: 50px;
 }
 
-.navbar-bg {
-  background-color: #5D99FF;
-}
-
-.navbar-line-bg {
-  background-color: #35a719;
-}
 
 //フッターにコンテンツが隠れることを避けるための定義
 body {
