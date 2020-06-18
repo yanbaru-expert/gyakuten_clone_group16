@@ -6,6 +6,11 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import "@fortawesome/fontawesome-free/scss/solid";
 @import "@fortawesome/fontawesome-free/scss/brands";
 
+pre {
+  border: 0.1px solid;
+  padding: 10px;
+}
+
 .container-login {
     @extend .container-fluid;
     max-width: 576px;
