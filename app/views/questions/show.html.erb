@@ -1,23 +1,21 @@
 <div class="container-login">
-  <div id="container">
-    <section id="question">
-      <div class="title">
+  <section id="question">
+    <div class="title">
       <h3>【質問】</h3>
       <%= @question.title %>
-     </div>
-     <hr>
-      <div class="detail">
+    </div>
+  <hr>
+    <div class="detail">
       <h3>【詳細】</h3>
       <%= markdown(@question.detail).html_safe %>
-      </div>
-      <hr>
-      <% @solutions.each.with_index(1) do |solution, i| %>
-        <div class="answer">
+    </div>
+  <hr>
+    <% @solutions.each.with_index(1) do |solution, i| %>
+      <div class="answer">
         <h3>【回答<%= i %>】</h3>
         <%= markdown(solution.answer).html_safe %>
-        </div>
-      <% end %>
-    </section> 
-  </div>
+      </div>
+    <% end %>
+  </section> 
   <%= render 'questions/solution_form' %>
 </div>

@@ -6,6 +6,24 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import "@fortawesome/fontawesome-free/scss/solid";
 @import "@fortawesome/fontawesome-free/scss/brands";
 
+//フッターにコンテンツが隠れることを避けるための定義
+body {
+  padding-bottom: 70px;
+}
+
+.container {
+  padding: 120px 0 80px 0;
+}
+
+.content {
+  margin: 0 auto; 
+  text-align: center;
+ }
+
+.main-bg-color {
+  background-color: #5D99FF;
+}
+
 .container-login {
     @extend .container-fluid;
     max-width: 576px;
@@ -17,20 +35,11 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
     width: 710px;
   }
 
-.aws-table-head {
-    background-color: #007bff;
-  }
-
 .aws-text-content {
     width: 710px;
     margin: 0 auto;
     text-align: left;
     padding: 50px 0 160px 0;
-  }
-
-.content {
-   margin: 0 auto; 
-   text-align: center;
   }
 
 .question {
@@ -55,12 +64,8 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   color: #35a719 ;
 }
 
-.line-table-container {
-  margin: 0 auto;
-  width: 710px;
-}
 
-.line-table-head {
+.line-bg-color {
   background-color: #35a719 ;
 }
 
@@ -70,23 +75,6 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   text-align: left;
   padding: 50px 0 160px 0;
   line-height: 50px;
-}
-
-.navbar-bg {
-  background-color: #5D99FF;
-}
-
-.navbar-line-bg {
-  background-color: #35a719;
-}
-
-//フッターにコンテンツが隠れることを避けるための定義
-body {
-  padding-bottom: 70px;
-}
-
-.container {
-  padding: 50px 0 160px 0;
 }
 
 input.search-text {
