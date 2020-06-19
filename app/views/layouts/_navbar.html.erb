@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top <%= line_color %>">
   
   <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-    <a class="navbar-brand" href="/">GyakutenCloneGroup</a>
+    <%= link_to "GyakutenCloneGroup", root_path, class:"navbar-brand" %>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,29 +13,29 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <%= link_to "動画教材", root_path, class:"dropdown-item" %>
-            <a class="dropdown-item" href="/texts">テキスト教材</a>
-            <a class="dropdown-item" href="/aws_texts">AWSテキスト教材</a>
-            <a class="dropdown-item" href="/live_codings">ライブコーディング</a>
-            <a class="dropdown-item" href="/questions">質問集</a>
+          <%= link_to "テキスト教材", texts_path, class:"dropdown-item" %>
+          <%= link_to "AWSテキスト教材", aws_texts_path, class:"dropdown-item" %>
+          <%= link_to "ライブコーディング", live_codings_path, class:"dropdown-item" %>
+          <%= link_to "質問集", questions_path, class:"dropdown-item" %>
         </div>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/php_lectures">PHP講座</a>
+        <%= link_to "PHP講座", php_lectures_path, class:"nav-link" %>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/talks">対談</a>
+        <%= link_to "対談", talks_path, class:"nav-link" %>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/marketings">情報発信</a>
+        <%= link_to "情報発信", marketings_path, class:"nav-link" %>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/movie_edit_courses">動画編集講座</a>
+        <%= link_to "動画編集講座", movie_edit_courses_path, class:"nav-link" %>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/writings">ライティング講座</a>
+        <%= link_to "ライティング講座", writings_path, class:"nav-link" %>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/lines">LINE@</a>
+        <%= link_to "LINE@", lines_path, class:"nav-link" %>
       </li>
       <% if user_signed_in? %>
         <li class="nav-item active">
