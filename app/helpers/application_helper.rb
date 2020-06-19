@@ -49,8 +49,8 @@ end
 
 def line_color
   if controller.controller_name == "lines"
-    "navbar-line-bg"
+    "line-bg-color"
   else
-    "navbar-bg"
+    "main-bg-color"
   end
 end
