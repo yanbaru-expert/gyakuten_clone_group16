@@ -1,10 +1,21 @@
-<% @movies.each.with_index(@movies.offset_value + 1) do |movie, i| %>
-  <div class="mt-5">
-    <div class="text-center">
-      <p><%= "Lv.#{i}： #{movie.title}" %></p>
-        <iframe width="560" height="315" src="<%=movie.url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+<div class="container-fluid">
+  <div class="row">
+    <% @movies.each.with_index(@movies.offset_value + 1) do |movie, i| %>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-dark mb-3">
+          <div class="card-header p-0">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="<%=movie.url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="card-body">
+            <p><%= "Lv.#{i}： #{movie.title}" %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>
+
   
 <div class="pagination justify-content-center"><%= paginate(@movies) %></div>
