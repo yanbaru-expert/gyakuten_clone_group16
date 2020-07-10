@@ -10,9 +10,9 @@
           </div>
           <div class="card-body movie-text">
             <% if @watched_movie_ids.include?(movie.id) %>
-              <a class="btn btn-primary btn-block" rel="nofollow" href="/movies/1133/watched_movies">視聴済みを解除</a>>
+              <%= link_to '視聴済みを解除', movie_watches_path(movie), class:"btn btn-primary btn-block", method: :delete %>
             <% else %>
-              <a class="btn btn-secondary btn-block" rel="nofollow" href="/movies/1133/watched_movies">視聴済みにする</a>
+              <%= link_to '視聴済みにする', movie_watches_path(movie), class:"btn btn-secondary btn-block", method: :post %>
             <% end %>
             <p><%= "Lv.#{i}： #{movie.title}" %></p>
           </div>
