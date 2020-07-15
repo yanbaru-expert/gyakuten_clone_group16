@@ -1,8 +1,18 @@
-<% @php_lectures.each.with_index(1) do |php_lecture, i| %>
-  <div class="mt-5">
-    <div class="text-center">
-      <p><%= "#{php_lecture.title}" %></p>
-        <iframe width="560" height="315" src="<%=php_lecture.url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+<div class="container-fluid">
+  <div class="row">
+    <% @php_lectures.each.with_index(1) do |php_lecture, i| %>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-dark mb-3">
+          <div class="card-header p-0">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="<%=php_lecture.url%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="card-body movie-text">
+            <p><%= "#{php_lecture.title}" %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>
